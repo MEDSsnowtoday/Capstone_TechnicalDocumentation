@@ -132,3 +132,4 @@ dmypy.json
 # folders
 data/
 images/
+.Rproj.user
