@@ -1,0 +1,6 @@
+# Archive Access {#archive}
+
+This Project was an analysis of existing data, which is openly available at location cited in the reference section [@stillinger2022]. Further documentation about data processing are available on the [MEDS Snow Today GitHub organization](https://github.com/MEDSsnowtoday).
+
+## Data to Retain
+

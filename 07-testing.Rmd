@@ -1,0 +1,15 @@
+# Summary of Testing {#testing}
+
+Evaluation of our products and web application’s functionality and usability was completed by the Snow Today group. 
+
+## Unit Testing
+
+Unit testing made sure that each visualization rendered properly on the Shiny app website and that the visualizations’ interactive components worked. 
+
+## Sanity Testing
+
+The Group ensured that our products produced realistic results. Sanity testing was completed by all group members. 
+
+## System Testing
+
+Once the above tests were complete, system testing was conducted to ensure the operability of the web application and tutorials as a whole. 

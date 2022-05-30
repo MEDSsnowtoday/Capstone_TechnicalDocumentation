@@ -1,36 +1,55 @@
 --- 
-title: "A Minimal Book Example"
-author: "Yihui Xie"
-date: "`r Sys.Date()`"
+title: "Improving Usability of Snow Data through Web-based Visualizations & Tutorials"
+subtitle: "An Open Source Workflow for Processing and Visualizing Snow Data"
+author: 
+  - Ryan Munnikhuis | Bren School of Environmental Science & Managment | MEDS 2022
+  - Julia Parish | Bren School of Environmental Science & Managment | MEDS 2022
+  - Marie Rivers | Bren School of Environmental Science & Managment | MEDS 2022
+date: '2022-06-03'
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography: [bibiliography.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: "MEDS Snow Today Capstone Project Technical Documentation"
 ---
 
-# Prerequisites
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+# Signature Page
 
-The **bookdown** package can be installed from CRAN or Github:
+**Snow Today**
 
-```{r eval=FALSE}
-install.packages("bookdown")
-# or the development version
-# devtools::install_github("rstudio/bookdown")
-```
+**Improving Usability of Snow Data Through Web Based Visualizations and Tutorials**
 
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+As developers of this Capstone Project documentation, we archive this documentation on the Bren School’s website such that the results of our research are available for all to read. Our signatures on the document signify our joint responsibility to fulfill the archiving standards set by the Bren School of Environmental Science & Management.
 
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
+_________________________________________________
+MEMBER NAME
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+_________________________________________________
+MEMBER NAME
+
+_________________________________________________
+MEMBER NAME
+
+
+The Bren School of Environmental Science & Management produces professionals with unrivaled training in environmental science and management who will devote their unique skills to the diagnosis, assessment, mitigation, prevention, and remedy of the environmental problems of today and the future. A guiding principle of the School is that the analysis of environmental problems requires quantitative training in more than one discipline and an awareness of the physical, biological, social, political, and economic consequences that arise from scientific or technological decisions.
+
+The Capstone Project is required of all students in the Master of Environmental Data Science (MEDS) Program. The Project is a six-month-long activity in which small groups of students contribute to data science practices, products or analyses that address a challenge or need related to a specific environmental issue. 
+
+This Capstone Project Technical Documentation is authored by MEDS students and has been reviewed and approved by:
+
+
+______________________________________________
+ADVISOR
+
+______________________________________________
+ADVISOR
+
+
+____________________
+DATE
+
+

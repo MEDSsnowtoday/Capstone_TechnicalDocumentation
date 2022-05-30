@@ -1,0 +1,20 @@
+# Products and Deliverables {#deliverables}
+
+The Snow Today Group produced three deliverables to achieve the Project objective of improving the usability of snow remote sensing data:
+
+- Created recommendations for an information architecture plan and wireframe mockups of proposed Snow Today website;
+- Developed visuals of snow cover area and albedo on an interactive website application; and 
+- Generated “How To” example tutorials to guide various end users through the process of using the data to extract meaningful insights.
+
+## Website Recommendations
+
+The  website recommendations provide features, user selection options, pages and aesthetics to facilitate future discussions between the clients and NSIDC web developers who will create the new expanded Snow Today website. 
+
+## Interactive Visualizations
+
+Visualizations include interactive charts and maps of snow cover and albedo to display the change in these parameters over space and time. All visualizations are presented on the Snow Today Shiny application. 
+
+## Tutorials
+
+Tutorials based in python were created to facilitate expanded use of output HDF5 files from ERI’s Snow Property Inversion From Remote Sensing (SPIReS) model that contain snow cover fraction and snow albedo data [@spires2021].
+

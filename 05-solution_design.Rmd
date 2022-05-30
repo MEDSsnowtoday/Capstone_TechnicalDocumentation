@@ -1,0 +1,5 @@
+# Solution Design {#solution}
+
+## Approach and Methods
+
+The Snow Today Group approach focused on how the framework of the new Snow Today website can deliver meaningful content to diverse end-users. 

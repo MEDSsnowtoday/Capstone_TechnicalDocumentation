@@ -1,0 +1,46 @@
+# User Documentation {#userdoc}
+
+## Overview
+
+
+## Required Software and Packages
+
+
+## Data and Repository Sources
+
+The Project presents data on snow cover area and albedo. The Snow Today Group accessed data from ERI, which hosts a repository of historical snow condition data. These files were created using the SPIReS model and are outputted in an HDF5 format (.H5 files). The SPIReS HDF files contain 19 years of snow cover and albedo data. There is one file for each year, and this Project accessed the files from 2001 to 2019. All data used for the Project are publicly available, and there are no limitations to how others can use the data. 
+
+
+## Exploring the Data
+
+### Accessing Data and Metadata
+
+Snow cover and albedo datasets are stored...
+
+### Convert Data Files and Visualize
+
+
+
+### Data Analysis
+
+
+### R Shiny Application 
+
+A prototype web application was developed to showcase our contributions towards a more open source workflow for Snow Today data. The web application, which was developed with R Shiny, presents potential features for the new Snow Today website, interactive visualizations, and tutorials. The web application also presents documentation on snow science, links to Snow Today monthly newsletters, information on the data sources including metadata, MEDS capstone project background, and team bios. Together, this content will minimize a barrier to working with Snow Today data.
+Interactive visualizations presented on the Shiny app are for the Sierra region in the Western United States. The landing page, “Daily Snow Cover and Albedo,” of the app allows users to view snow properties for any day from October 1, 2000 through September 30, 2019 by selecting a date from the calendar widget. The top map shows snow cover percent with brighter colors indicating more snow. The bottom map shows albeo for snow covered areas with darker yellow indicating snow with lower albedo.
+The Project deliverables are hosted on an R Shiny application. This application hosts pages displaying snow data visualizations, snow science glossary, Snow Today monthly newsletters, links to access Snow Today SPIReS data, a project About page, and the Project’s tutorials. 
+
+On the “Monthly Maps” page, users can select a water year (wy2001 through wy2019) from a drop down menu thensnow cover percent or albedo from radio buttons. Here, the top map shows averages of the selected variable for each month and the bottom map shows the monthly anomaly. For the snow cover anomaly map, red indicates less snow than typical for that month and blue represents areas with more snow than typical for that month. For the albedo anomaly map, brown indicates lower than average albedo while purple indicates higher than average albedo. The “Annual Maps” page shows the annual average and anomaly for the selected water year and variable.
+
+
+### Troublshooting
+
+Submit issues to MEDS Snow Today Capstone repositories.
+
+
+
+
+
+
+
+

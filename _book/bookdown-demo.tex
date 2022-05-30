@@ -1,0 +1,282 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Improving Usability of Snow Data through Web-based Visualizations \& Tutorials},
+  pdfauthor={Ryan Munnikhuis \textbar{} Bren School of Environmental Science \& Managment \textbar{} MEDS 2022; Julia Parish \textbar{} Bren School of Environmental Science \& Managment \textbar{} MEDS 2022; Marie Rivers \textbar{} Bren School of Environmental Science \& Managment \textbar{} MEDS 2022},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Improving Usability of Snow Data through Web-based Visualizations \& Tutorials}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{An Open Source Workflow for Processing and Visualizing Snow Data}
+\author{Ryan Munnikhuis \textbar{} Bren School of Environmental Science \& Managment \textbar{} MEDS 2022 \and Julia Parish \textbar{} Bren School of Environmental Science \& Managment \textbar{} MEDS 2022 \and Marie Rivers \textbar{} Bren School of Environmental Science \& Managment \textbar{} MEDS 2022}
+\date{2022-06-03}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{signature-page}{%
+\chapter{Signature Page}\label{signature-page}}
+
+\textbf{Snow Today}
+
+\textbf{Improving Usability of Snow Data Through Web Based Visualizations and Tutorials}
+
+As developers of this Capstone Project documentation, we archive this documentation on the Bren School's website such that the results of our research are available for all to read. Our signatures on the document signify our joint responsibility to fulfill the archiving standards set by the Bren School of Environmental Science \& Management.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+MEMBER NAME
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+MEMBER NAME
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+MEMBER NAME
+
+The Bren School of Environmental Science \& Management produces professionals with unrivaled training in environmental science and management who will devote their unique skills to the diagnosis, assessment, mitigation, prevention, and remedy of the environmental problems of today and the future. A guiding principle of the School is that the analysis of environmental problems requires quantitative training in more than one discipline and an awareness of the physical, biological, social, political, and economic consequences that arise from scientific or technological decisions.
+
+The Capstone Project is required of all students in the Master of Environmental Data Science (MEDS) Program. The Project is a six-month-long activity in which small groups of students contribute to data science practices, products or analyses that address a challenge or need related to a specific environmental issue.
+
+This Capstone Project Technical Documentation is authored by MEDS students and has been reviewed and approved by:
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+ADVISOR
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+ADVISOR
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+DATE
+
+\hypertarget{abstract}{%
+\chapter{Abstract}\label{abstract}}
+
+Snow packs store valuable water resources, influence global climate dynamics, and provide outdoor recreational opportunities, but the spatial and temporal distribution of snow pack properties are hard to quantify and are sensitive to climate change. Remotely sensed data can provide valuable large scale information about snow in hard to access locations, but technical expertise can be a barrier to extracting meaningful insights. Scientists at the UCSB Earth Research Institute help communicate remotely sensed snow conditions through the Snow Today website, which presents daily images and monthly blog posts on the status of snow, including snow cover percent and albedo. The data used to generate these insights are available on the website, but since the data processing and visualization was completed with Matlab, a proprietary computational software system, the workflow does not follow open source data practices. Our project addresses these limitations by creating an open source workflow that improves the usability of snow data through interactive web based visualizations and Python based tutorials. These contributions will also help guide the design of updates to the user experience and interface of the Snow Today website. Now water managers, scientists, and recreationalist can complete customized analyses of snow data for specific regions of interest to support planning and decision making for water supply allocation, hydrologic research, and recreational planning. As the impacts of climate change continue to affect snow conditions, the improved usability of Snow Today's datasets is important for informing snow resource planning and decision making.
+
+\hypertarget{exec_summary}{%
+\chapter{Executive Summary}\label{exec_summary}}
+
+Snow is one of the most important natural water resources. Scientists have established that climate change is affecting the spatial and temporal variability of frozen water resources \citep{newton2021}.
+
+\hypertarget{background}{%
+\chapter{Background \& Significance}\label{background}}
+
+\hypertarget{project-background}{%
+\section{Project Background}\label{project-background}}
+
+Snow Today is a scientific analysis website that provides data on snow conditions using satellite data and surface observations in the Western Region of the United States. Snow Today is composed of researchers from the UCSB Earth Research Institute (ERI), INSTAAR, Oregon State University, and the NSIDC. The site is funded by the National Aeronautics and Space Administration (NASA) and hosted by the National Snow and Ice Data Center (NSIDC).
+
+Snow Today offers real-time data on snowpack properties from the watershed basin to the regional level across the Western United States. Spatial products offered by Snow Today are currently limited to snow-covered areas and snow cover days across the Western United States.
+
+\hypertarget{project-significance}{%
+\section{Project Significance}\label{project-significance}}
+
+The Snow Today site offers valuable resources to aid better research and track the temporal and geospatial range of snow cover and snow albedo. However, given Snow Today's limited spatial domain, the website's usefulness is restricted to a small group of relevant end-users interested in Western United States snow cover extent. The Client plans to expand the website's spatial coverage from the Western United States to all of North America, Greenland, and High Mountain Asia to broaden the website's applicability to a greater audience. In addition, Snow Today is expanding the spatial products offered on the website. Current website architecture and processing limitations will not support the newly expanded product scope.
+
+\hypertarget{objectives}{%
+\chapter{Project Objectives}\label{objectives}}
+
+This Project's goal was to improve the usability of snow data through web-based visualizations and tutorials by creating an open source workflow for processing and visualizing snow data.
+
+\hypertarget{solution}{%
+\chapter{Solution Design}\label{solution}}
+
+\hypertarget{approach-and-methods}{%
+\section{Approach and Methods}\label{approach-and-methods}}
+
+The Snow Today Group approach focused on how the framework of the new Snow Today website can deliver meaningful content to diverse end-users.
+
+\hypertarget{deliverables}{%
+\chapter{Products and Deliverables}\label{deliverables}}
+
+The Snow Today Group produced three deliverables to achieve the Project objective of improving the usability of snow remote sensing data:
+
+\begin{itemize}
+\tightlist
+\item
+  Created recommendations for an information architecture plan and wireframe mockups of proposed Snow Today website;
+\item
+  Developed visuals of snow cover area and albedo on an interactive website application; and
+\item
+  Generated ``How To'' example tutorials to guide various end users through the process of using the data to extract meaningful insights.
+\end{itemize}
+
+\hypertarget{website-recommendations}{%
+\section{Website Recommendations}\label{website-recommendations}}
+
+The website recommendations provide features, user selection options, pages and aesthetics to facilitate future discussions between the clients and NSIDC web developers who will create the new expanded Snow Today website.
+
+\hypertarget{interactive-visualizations}{%
+\section{Interactive Visualizations}\label{interactive-visualizations}}
+
+Visualizations include interactive charts and maps of snow cover and albedo to display the change in these parameters over space and time. All visualizations are presented on the Snow Today Shiny application.
+
+\hypertarget{tutorials}{%
+\section{Tutorials}\label{tutorials}}
+
+Tutorials based in python were created to facilitate expanded use of output HDF5 files from ERI's Snow Property Inversion From Remote Sensing (SPIReS) model that contain snow cover fraction and snow albedo data \citep{spires2021}.
+
+\hypertarget{testing}{%
+\chapter{Summary of Testing}\label{testing}}
+
+Evaluation of our products and web application's functionality and usability was completed by the Snow Today group.
+
+\hypertarget{unit-testing}{%
+\section{Unit Testing}\label{unit-testing}}
+
+Unit testing made sure that each visualization rendered properly on the Shiny app website and that the visualizations' interactive components worked.
+
+\hypertarget{sanity-testing}{%
+\section{Sanity Testing}\label{sanity-testing}}
+
+The Group ensured that our products produced realistic results. Sanity testing was completed by all group members.
+
+\hypertarget{system-testing}{%
+\section{System Testing}\label{system-testing}}
+
+Once the above tests were complete, system testing was conducted to ensure the operability of the web application and tutorials as a whole.
+
+\hypertarget{userdoc}{%
+\chapter{User Documentation}\label{userdoc}}
+
+\hypertarget{overview}{%
+\section{Overview}\label{overview}}
+
+\hypertarget{required-software-and-packages}{%
+\section{Required Software and Packages}\label{required-software-and-packages}}
+
+\hypertarget{data-and-repository-sources}{%
+\section{Data and Repository Sources}\label{data-and-repository-sources}}
+
+The Project presents data on snow cover area and albedo. The Snow Today Group accessed data from ERI, which hosts a repository of historical snow condition data. These files were created using the SPIReS model and are outputted in an HDF5 format (.H5 files). The SPIReS HDF files contain 19 years of snow cover and albedo data. There is one file for each year, and this Project accessed the files from 2001 to 2019. All data used for the Project are publicly available, and there are no limitations to how others can use the data.
+
+\hypertarget{exploring-the-data}{%
+\section{Exploring the Data}\label{exploring-the-data}}
+
+\hypertarget{accessing-data-and-metadata}{%
+\subsection{Accessing Data and Metadata}\label{accessing-data-and-metadata}}
+
+Snow cover and albedo datasets are stored\ldots{}
+
+\hypertarget{convert-data-files-and-visualize}{%
+\subsection{Convert Data Files and Visualize}\label{convert-data-files-and-visualize}}
+
+\hypertarget{data-analysis}{%
+\subsection{Data Analysis}\label{data-analysis}}
+
+\hypertarget{r-shiny-application}{%
+\subsection{R Shiny Application}\label{r-shiny-application}}
+
+A prototype web application was developed to showcase our contributions towards a more open source workflow for Snow Today data. The web application, which was developed with R Shiny, presents potential features for the new Snow Today website, interactive visualizations, and tutorials. The web application also presents documentation on snow science, links to Snow Today monthly newsletters, information on the data sources including metadata, MEDS capstone project background, and team bios. Together, this content will minimize a barrier to working with Snow Today data.
+Interactive visualizations presented on the Shiny app are for the Sierra region in the Western United States. The landing page, ``Daily Snow Cover and Albedo,'' of the app allows users to view snow properties for any day from October 1, 2000 through September 30, 2019 by selecting a date from the calendar widget. The top map shows snow cover percent with brighter colors indicating more snow. The bottom map shows albeo for snow covered areas with darker yellow indicating snow with lower albedo.
+The Project deliverables are hosted on an R Shiny application. This application hosts pages displaying snow data visualizations, snow science glossary, Snow Today monthly newsletters, links to access Snow Today SPIReS data, a project About page, and the Project's tutorials.
+
+On the ``Monthly Maps'' page, users can select a water year (wy2001 through wy2019) from a drop down menu thensnow cover percent or albedo from radio buttons. Here, the top map shows averages of the selected variable for each month and the bottom map shows the monthly anomaly. For the snow cover anomaly map, red indicates less snow than typical for that month and blue represents areas with more snow than typical for that month. For the albedo anomaly map, brown indicates lower than average albedo while purple indicates higher than average albedo. The ``Annual Maps'' page shows the annual average and anomaly for the selected water year and variable.
+
+\hypertarget{troublshooting}{%
+\subsection{Troublshooting}\label{troublshooting}}
+
+Submit issues to MEDS Snow Today Capstone repositories.
+
+\hypertarget{archive}{%
+\chapter{Archive Access}\label{archive}}
+
+This Project was an analysis of existing data, which is openly available at location cited in the reference section \citep{stillinger2022}. Further documentation about data processing are available on the \href{https://github.com/MEDSsnowtoday}{MEDS Snow Today GitHub organization}.
+
+\hypertarget{data-to-retain}{%
+\section{Data to Retain}\label{data-to-retain}}
+
+  \bibliography{bibiliography.bib,packages.bib}
+
+\end{document}

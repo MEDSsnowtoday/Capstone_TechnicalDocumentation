@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 9 User Documentation | Improving Usability of Snow Data through Web-based Visualizations &amp; Tutorials</title>
+  <meta name="description" content="MEDS Capstone Project Technical Documentation" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 9 User Documentation | Improving Usability of Snow Data through Web-based Visualizations &amp; Tutorials" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="MEDS Capstone Project Technical Documentation" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 User Documentation | Improving Usability of Snow Data through Web-based Visualizations &amp; Tutorials" />
+  
+  <meta name="twitter:description" content="MEDS Capstone Project Technical Documentation" />
+  
+
+<meta name="author" content="Ryan Munnikhuis | Bren School of Environmental Science &amp; Managment | MEDS 2022" />
+<meta name="author" content="Julia Parish | Bren School of Environmental Science &amp; Managment | MEDS 2022" />
+<meta name="author" content="Marie Rivers | Bren School of Environmental Science &amp; Managment | MEDS 2022" />
+
+
+<meta name="date" content="2022-06-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="testing.html"/>
+<link rel="next" href="archive.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Improving Usability of Snow Data through Web-based Visualizations & Tutorials</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Signature Page</a></li>
+<li class="chapter" data-level="2" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i><b>2</b> Abstract</a></li>
+<li class="chapter" data-level="3" data-path="exec_summary.html"><a href="exec_summary.html"><i class="fa fa-check"></i><b>3</b> Executive Summary</a></li>
+<li class="chapter" data-level="4" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>4</b> Background &amp; Significance</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="background.html"><a href="background.html#project-background"><i class="fa fa-check"></i><b>4.1</b> Project Background</a></li>
+<li class="chapter" data-level="4.2" data-path="background.html"><a href="background.html#project-significance"><i class="fa fa-check"></i><b>4.2</b> Project Significance</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>5</b> Project Objectives</a></li>
+<li class="chapter" data-level="6" data-path="solution.html"><a href="solution.html"><i class="fa fa-check"></i><b>6</b> Solution Design</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="solution.html"><a href="solution.html#approach-and-methods"><i class="fa fa-check"></i><b>6.1</b> Approach and Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="deliverables.html"><a href="deliverables.html"><i class="fa fa-check"></i><b>7</b> Products and Deliverables</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="deliverables.html"><a href="deliverables.html#website-recommendations"><i class="fa fa-check"></i><b>7.1</b> Website Recommendations</a></li>
+<li class="chapter" data-level="7.2" data-path="deliverables.html"><a href="deliverables.html#interactive-visualizations"><i class="fa fa-check"></i><b>7.2</b> Interactive Visualizations</a></li>
+<li class="chapter" data-level="7.3" data-path="deliverables.html"><a href="deliverables.html#tutorials"><i class="fa fa-check"></i><b>7.3</b> Tutorials</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="testing.html"><a href="testing.html"><i class="fa fa-check"></i><b>8</b> Summary of Testing</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="testing.html"><a href="testing.html#unit-testing"><i class="fa fa-check"></i><b>8.1</b> Unit Testing</a></li>
+<li class="chapter" data-level="8.2" data-path="testing.html"><a href="testing.html#sanity-testing"><i class="fa fa-check"></i><b>8.2</b> Sanity Testing</a></li>
+<li class="chapter" data-level="8.3" data-path="testing.html"><a href="testing.html#system-testing"><i class="fa fa-check"></i><b>8.3</b> System Testing</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="userdoc.html"><a href="userdoc.html"><i class="fa fa-check"></i><b>9</b> User Documentation</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="userdoc.html"><a href="userdoc.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+<li class="chapter" data-level="9.2" data-path="userdoc.html"><a href="userdoc.html#required-software-and-packages"><i class="fa fa-check"></i><b>9.2</b> Required Software and Packages</a></li>
+<li class="chapter" data-level="9.3" data-path="userdoc.html"><a href="userdoc.html#data-and-repository-sources"><i class="fa fa-check"></i><b>9.3</b> Data and Repository Sources</a></li>
+<li class="chapter" data-level="9.4" data-path="userdoc.html"><a href="userdoc.html#exploring-the-data"><i class="fa fa-check"></i><b>9.4</b> Exploring the Data</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="userdoc.html"><a href="userdoc.html#accessing-data-and-metadata"><i class="fa fa-check"></i><b>9.4.1</b> Accessing Data and Metadata</a></li>
+<li class="chapter" data-level="9.4.2" data-path="userdoc.html"><a href="userdoc.html#convert-data-files-and-visualize"><i class="fa fa-check"></i><b>9.4.2</b> Convert Data Files and Visualize</a></li>
+<li class="chapter" data-level="9.4.3" data-path="userdoc.html"><a href="userdoc.html#data-analysis"><i class="fa fa-check"></i><b>9.4.3</b> Data Analysis</a></li>
+<li class="chapter" data-level="9.4.4" data-path="userdoc.html"><a href="userdoc.html#r-shiny-application"><i class="fa fa-check"></i><b>9.4.4</b> R Shiny Application</a></li>
+<li class="chapter" data-level="9.4.5" data-path="userdoc.html"><a href="userdoc.html#troublshooting"><i class="fa fa-check"></i><b>9.4.5</b> Troublshooting</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="archive.html"><a href="archive.html"><i class="fa fa-check"></i><b>10</b> Archive Access</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="archive.html"><a href="archive.html#data-to-retain"><i class="fa fa-check"></i><b>10.1</b> Data to Retain</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Improving Usability of Snow Data through Web-based Visualizations &amp; Tutorials</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="userdoc" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Chapter 9</span> User Documentation<a href="userdoc.html#userdoc" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="overview" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Overview<a href="userdoc.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="required-software-and-packages" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Required Software and Packages<a href="userdoc.html#required-software-and-packages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="data-and-repository-sources" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Data and Repository Sources<a href="userdoc.html#data-and-repository-sources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Project presents data on snow cover area and albedo. The Snow Today Group accessed data from ERI, which hosts a repository of historical snow condition data. These files were created using the SPIReS model and are outputted in an HDF5 format (.H5 files). The SPIReS HDF files contain 19 years of snow cover and albedo data. There is one file for each year, and this Project accessed the files from 2001 to 2019. All data used for the Project are publicly available, and there are no limitations to how others can use the data.</p>
+</div>
+<div id="exploring-the-data" class="section level2 hasAnchor" number="9.4">
+<h2><span class="header-section-number">9.4</span> Exploring the Data<a href="userdoc.html#exploring-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="accessing-data-and-metadata" class="section level3 hasAnchor" number="9.4.1">
+<h3><span class="header-section-number">9.4.1</span> Accessing Data and Metadata<a href="userdoc.html#accessing-data-and-metadata" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Snow cover and albedo datasets are stored…</p>
+</div>
+<div id="convert-data-files-and-visualize" class="section level3 hasAnchor" number="9.4.2">
+<h3><span class="header-section-number">9.4.2</span> Convert Data Files and Visualize<a href="userdoc.html#convert-data-files-and-visualize" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="data-analysis" class="section level3 hasAnchor" number="9.4.3">
+<h3><span class="header-section-number">9.4.3</span> Data Analysis<a href="userdoc.html#data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="r-shiny-application" class="section level3 hasAnchor" number="9.4.4">
+<h3><span class="header-section-number">9.4.4</span> R Shiny Application<a href="userdoc.html#r-shiny-application" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A prototype web application was developed to showcase our contributions towards a more open source workflow for Snow Today data. The web application, which was developed with R Shiny, presents potential features for the new Snow Today website, interactive visualizations, and tutorials. The web application also presents documentation on snow science, links to Snow Today monthly newsletters, information on the data sources including metadata, MEDS capstone project background, and team bios. Together, this content will minimize a barrier to working with Snow Today data.
+Interactive visualizations presented on the Shiny app are for the Sierra region in the Western United States. The landing page, “Daily Snow Cover and Albedo,” of the app allows users to view snow properties for any day from October 1, 2000 through September 30, 2019 by selecting a date from the calendar widget. The top map shows snow cover percent with brighter colors indicating more snow. The bottom map shows albeo for snow covered areas with darker yellow indicating snow with lower albedo.
+The Project deliverables are hosted on an R Shiny application. This application hosts pages displaying snow data visualizations, snow science glossary, Snow Today monthly newsletters, links to access Snow Today SPIReS data, a project About page, and the Project’s tutorials.</p>
+<p>On the “Monthly Maps” page, users can select a water year (wy2001 through wy2019) from a drop down menu thensnow cover percent or albedo from radio buttons. Here, the top map shows averages of the selected variable for each month and the bottom map shows the monthly anomaly. For the snow cover anomaly map, red indicates less snow than typical for that month and blue represents areas with more snow than typical for that month. For the albedo anomaly map, brown indicates lower than average albedo while purple indicates higher than average albedo. The “Annual Maps” page shows the annual average and anomaly for the selected water year and variable.</p>
+</div>
+<div id="troublshooting" class="section level3 hasAnchor" number="9.4.5">
+<h3><span class="header-section-number">9.4.5</span> Troublshooting<a href="userdoc.html#troublshooting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Submit issues to MEDS Snow Today Capstone repositories.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="testing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="archive.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/MEDSsnowtoday/Capstone_TechnicalDocumentation/edit/master/08-user_documentation.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "none",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

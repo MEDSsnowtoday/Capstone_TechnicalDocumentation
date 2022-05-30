@@ -1,0 +1,11 @@
+# Background & Significance {#background}
+
+## Project Background
+
+Snow Today is a scientific analysis website that provides data on snow conditions using satellite data and surface observations in the Western Region of the United States. Snow Today is composed of researchers from the UCSB Earth Research Institute (ERI), INSTAAR, Oregon State University, and the NSIDC. The site is funded by the National Aeronautics and Space Administration (NASA) and hosted by the National Snow and Ice Data Center (NSIDC). 
+
+Snow Today offers real-time data on snowpack properties from the watershed basin to the regional level across the Western United States. Spatial products offered by Snow Today are currently limited to snow-covered areas and snow cover days across the Western United States. 
+
+## Project Significance
+
+The Snow Today site offers valuable resources to aid better research and track the temporal and geospatial range of snow cover and snow albedo. However, given Snow Today’s limited spatial domain, the website’s usefulness is restricted to a small group of relevant end-users interested in Western United States snow cover extent. The Client plans to expand the website’s spatial coverage from the Western United States to all of North America, Greenland, and High Mountain Asia to broaden the website’s applicability to a greater audience. In addition, Snow Today is expanding the spatial products offered on the website. Current website architecture and processing limitations will not support the newly expanded product scope.
