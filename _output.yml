@@ -5,7 +5,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Improving Usability of Snow Data through Web-based Visualizations and Tutorials</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/MEDSsnowtoday/Technical_Documentation" target="blank">Published with bookdown</a></li>
     edit: https://github.com/MEDSsnowtoday/Technical_Documentation/edit/main/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
