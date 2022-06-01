@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Solution Design | Improving Usability of Snow Data through Web-based Visualizations and Tutorials</title>
+  <meta name="description" content="MEDS Snow Today Capstone Project Technical Documentation" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Solution Design | Improving Usability of Snow Data through Web-based Visualizations and Tutorials" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="MEDS Snow Today Capstone Project Technical Documentation" />
+  <meta name="github-repo" content="MEDSsnowtoday/Technical_Documentation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Solution Design | Improving Usability of Snow Data through Web-based Visualizations and Tutorials" />
+  
+  <meta name="twitter:description" content="MEDS Snow Today Capstone Project Technical Documentation" />
+  
+
+<meta name="author" content="Ryan Munnikhuis | Bren School of Environmental Science &amp; Managment | MEDS 2022" />
+<meta name="author" content="Julia Parish | Bren School of Environmental Science &amp; Managment | MEDS 2022" />
+<meta name="author" content="Marie Rivers | Bren School of Environmental Science &amp; Managment | MEDS 2022" />
+
+
+<meta name="date" content="2022-06-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="objectives.html"/>
+<link rel="next" href="deliverables.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Improving Usability of Snow Data through Web-based Visualizations and Tutorials</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Signature Page</a></li>
+<li class="chapter" data-level="2" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i><b>2</b> Abstract</a></li>
+<li class="chapter" data-level="3" data-path="exec_summary.html"><a href="exec_summary.html"><i class="fa fa-check"></i><b>3</b> Executive Summary</a></li>
+<li class="chapter" data-level="4" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>4</b> Background &amp; Significance</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="background.html"><a href="background.html#project-background"><i class="fa fa-check"></i><b>4.1</b> Project Background</a></li>
+<li class="chapter" data-level="4.2" data-path="background.html"><a href="background.html#project-significance"><i class="fa fa-check"></i><b>4.2</b> Project Significance</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>5</b> Project Objectives</a></li>
+<li class="chapter" data-level="6" data-path="solution.html"><a href="solution.html"><i class="fa fa-check"></i><b>6</b> Solution Design</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="solution.html"><a href="solution.html#approach-and-methods"><i class="fa fa-check"></i><b>6.1</b> Approach and Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="deliverables.html"><a href="deliverables.html"><i class="fa fa-check"></i><b>7</b> Products and Deliverables</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="deliverables.html"><a href="deliverables.html#website-recommendations"><i class="fa fa-check"></i><b>7.1</b> Website Recommendations</a></li>
+<li class="chapter" data-level="7.2" data-path="deliverables.html"><a href="deliverables.html#interactive-visualizations"><i class="fa fa-check"></i><b>7.2</b> Interactive Visualizations</a></li>
+<li class="chapter" data-level="7.3" data-path="deliverables.html"><a href="deliverables.html#tutorials"><i class="fa fa-check"></i><b>7.3</b> Tutorials</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="testing.html"><a href="testing.html"><i class="fa fa-check"></i><b>8</b> Summary of Testing</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="testing.html"><a href="testing.html#unit-testing"><i class="fa fa-check"></i><b>8.1</b> Unit Testing</a></li>
+<li class="chapter" data-level="8.2" data-path="testing.html"><a href="testing.html#sanity-testing"><i class="fa fa-check"></i><b>8.2</b> Sanity Testing</a></li>
+<li class="chapter" data-level="8.3" data-path="testing.html"><a href="testing.html#system-testing"><i class="fa fa-check"></i><b>8.3</b> System Testing</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="userdoc.html"><a href="userdoc.html"><i class="fa fa-check"></i><b>9</b> User Documentation</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="userdoc.html"><a href="userdoc.html#overview"><i class="fa fa-check"></i><b>9.1</b> Overview</a></li>
+<li class="chapter" data-level="9.2" data-path="userdoc.html"><a href="userdoc.html#required-software-and-packages"><i class="fa fa-check"></i><b>9.2</b> Required Software and Packages</a></li>
+<li class="chapter" data-level="9.3" data-path="userdoc.html"><a href="userdoc.html#data-and-repository-sources"><i class="fa fa-check"></i><b>9.3</b> Data and Repository Sources</a></li>
+<li class="chapter" data-level="9.4" data-path="userdoc.html"><a href="userdoc.html#exploring-the-data"><i class="fa fa-check"></i><b>9.4</b> Exploring the Data</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="userdoc.html"><a href="userdoc.html#accessing-data-and-metadata"><i class="fa fa-check"></i><b>9.4.1</b> Accessing Data and Metadata</a></li>
+<li class="chapter" data-level="9.4.2" data-path="userdoc.html"><a href="userdoc.html#convert-data-files-and-visualize"><i class="fa fa-check"></i><b>9.4.2</b> Convert Data Files and Visualize</a></li>
+<li class="chapter" data-level="9.4.3" data-path="userdoc.html"><a href="userdoc.html#data-analysis"><i class="fa fa-check"></i><b>9.4.3</b> Data Analysis</a></li>
+<li class="chapter" data-level="9.4.4" data-path="userdoc.html"><a href="userdoc.html#r-shiny-application"><i class="fa fa-check"></i><b>9.4.4</b> R Shiny Application</a></li>
+<li class="chapter" data-level="9.4.5" data-path="userdoc.html"><a href="userdoc.html#troublshooting"><i class="fa fa-check"></i><b>9.4.5</b> Troublshooting</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="archive.html"><a href="archive.html"><i class="fa fa-check"></i><b>10</b> Archive Access</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="archive.html"><a href="archive.html#data-to-retain"><i class="fa fa-check"></i><b>10.1</b> Data to Retain</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Improving Usability of Snow Data through Web-based Visualizations and Tutorials</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="solution" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Solution Design<a href="solution.html#solution" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="approach-and-methods" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Approach and Methods<a href="solution.html#approach-and-methods" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Snow Today Group approach focused on how the framework of the new Snow Today website can deliver meaningful content to diverse end-users.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="objectives.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="deliverables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-solution_design.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
