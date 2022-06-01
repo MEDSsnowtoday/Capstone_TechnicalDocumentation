@@ -1,5 +1,5 @@
 --- 
-title: "Improving Usability of Snow Data through Web-based Visualizations & Tutorials"
+title: "Improving Usability of Snow Data through Web-based Visualizations and Tutorials"
 subtitle: "An Open Source Workflow for Processing and Visualizing Snow Data"
 author: 
   - Ryan Munnikhuis | Bren School of Environmental Science & Managment | MEDS 2022
