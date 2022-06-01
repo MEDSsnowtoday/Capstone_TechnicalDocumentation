@@ -12,7 +12,7 @@ documentclass: book
 bibliography: [bibiliography.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo: MEDSsnowtoday/Technical_Documentation
 description: "MEDS Snow Today Capstone Project Technical Documentation"
 ---
 

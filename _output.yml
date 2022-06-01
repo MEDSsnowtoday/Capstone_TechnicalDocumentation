@@ -2,13 +2,11 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
-      collapse: none
-      scroll_highlight: yes
       before: |
-        <li><a href="./">Improving Usability of Snow Data through Web-based Visualizations & Tutorials</a></li>
+        <li><a href="./">Improving Usability of Snow Data through Web-based Visualizations and Tutorials</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/rstudio/bookdown/edit/master/%s
+    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
