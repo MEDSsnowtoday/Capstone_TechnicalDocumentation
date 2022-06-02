@@ -1,0 +1,12 @@
+# Prototype Web Application {-}
+
+## shiny test
+
+
+```{r, echo = FALSE, screenshot.ops = list(delay = 10), dev = 'png', cache = TRUE, fig.align = 'center', out.width = '90%'}
+
+# knitr::include_app("https://shiny.snow.ucsb.edu/snow_today_shiny_app/",
+#   height = "600px")
+
+```
+

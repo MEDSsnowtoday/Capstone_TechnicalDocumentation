@@ -1,6 +1,6 @@
 # Products and Deliverables {#deliverables}
 
-The Snow Today Group produced three deliverables to achieve the Project objective of improving the usability of snow remote sensing data:
+The Snow Today Group produced three deliverable to achieve the Project objective of improving the usability of snow remote sensing data:
 
 - Created recommendations for an information architecture plan and wireframe mockups of proposed Snow Today website;
 - Developed visuals of snow cover area and albedo on an interactive website application; and 

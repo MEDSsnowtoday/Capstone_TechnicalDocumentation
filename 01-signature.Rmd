@@ -1,0 +1,60 @@
+# Signature Page {-}
+
+**Snow Today**
+
+**Improving Usability of Snow Data Through Web Based Visualizations and Tutorials**
+
+
+As developers of this Capstone Project documentation, we archive this documentation on the Bren School’s website such that the results of our research are available for all to read. Our signatures on the document signify our joint responsibility to fulfill the archiving standards set by the Bren School of Environmental Science & Management.<br>
+<br>
+<br>
+
+
+_________________________________________________
+RYAN MUNNIKHUIS 
+<br>
+<br>
+
+_________________________________________________
+JULIA PARISH 
+<br>
+<br>
+
+_________________________________________________
+MARIE RIVERS
+<br>
+<br>
+<br>
+
+The Bren School of Environmental Science & Management produces professionals with unrivaled training in environmental science and management who will devote their unique skills to the diagnosis, assessment, mitigation, prevention, and remedy of the environmental problems of today and the future. A guiding principle of the School is that the analysis of environmental problems requires quantitative training in more than one discipline and an awareness of the physical, biological, social, political, and economic consequences that arise from scientific or technological decisions.
+
+The Capstone Project is required of all students in the [Master of Environmental Data Science (MEDS) Program](https://bren.ucsb.edu/masters-programs/master-environmental-data-science). The Project is a six-month-long activity in which small groups of students contribute to data science practices, products or analyses that address a challenge or need related to a specific environmental issue. 
+
+This Capstone Project Technical Documentation is authored by MEDS students and has been reviewed and approved by:
+<br>
+<br>
+<br>
+
+
+______________________________________________
+DR. SAM STEVENSON, FACULTY ADVISOR
+<br>
+<br>
+
+______________________________________________
+DATE
+<br>
+<br>
+<br>
+<br>
+
+______________________________________________
+DR. ALLISON HORST, FACULTY ADVISOR
+<br>
+<br>
+
+______________________________________________
+DATE
+
+
+
