@@ -28,7 +28,7 @@ knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)
 #update.packages(ask = FALSE, checkBuilt = TRUE)  # update R packages
 
 #source directories
-#image.dir <- here::here("images")
+image.dir <- here::here("images")
 
 
 library(tidyverse)

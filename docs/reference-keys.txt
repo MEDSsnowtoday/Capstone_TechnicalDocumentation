@@ -24,4 +24,3 @@ r-shiny-application
 troublshooting
 archive
 data-to-retain
-shiny-test
