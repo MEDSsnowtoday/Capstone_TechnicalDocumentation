@@ -8,22 +8,22 @@ This user documentation aims to guide end users on how to properly install and u
 ## Required Software and Packages
 
 The Project was completed with open-source software. Python is used to read data files, complete spatial and statistical analysis, and visualize results. All code is stored in the MEDS Snow Today public GitHub repository. Deliverables are visualized in a R Shiny application platform.
-Recommended software to install in order to run Project code: Anaconda-Navigator or Visual Studio Code (plus relevant extensions), and Conda, an open-source package management system (Anaconda 2017).
+Recommended software to install in order to run Project code: Anaconda-Navigator or Visual Studio Code (plus relevant extensions), and Conda, an open-source package management system [@conda].
 
 **Python Packages**
 
-- gdal
-- h5py
-- imageio
-- leafmap
-- matplotlib
-- numpy
-- pandas
-- plotly
-- rasterio
-- rioxarray
-- wget
-- xarray
+- gdal [@gdal]
+- h5py [@hdf5]
+- imageio [@imageio]
+- leafmap [@leafmap]
+- matplotlib [@matplotlib]
+- numpy [@numpy]
+- pandas [@pandas]
+- plotly [@plotly]
+- rasterio [@rasterio]
+- rioxarray [@rioxarray]
+- wget [@wget]
+- xarray [@xarray]
 
 
 ## Data and Repository Sources
@@ -51,7 +51,7 @@ Users may be interested in using Snow Today’s snow and albedo datasets to help
 
 ## R Shiny Web Application
 
-A prototype web application was developed to showcase our contributions to Snow Today data’s more open-source workflow. The web application, which was developed with R Shiny, presents potential features for the new Snow Today website, interactive visualizations, and tutorials. The web application also presents documentation on snow science, links to Snow Today monthly newsletters, and information on the data sources, including metadata, MEDS capstone Project background, and team bios. Together, this content will minimize a barrier to working with Snow Today data. The deployed Shiny app can be found at [https://shiny.snow.ucsb.edu/snow_today_shiny_app/](https://shiny.snow.ucsb.edu/snow_today_shiny_app/). 
+A prototype web application was developed to showcase our contributions to Snow Today data’s more open-source workflow. The web application, which was developed with R Shiny [@shiny], presents potential features for the new Snow Today website, interactive visualizations, and tutorials. The web application also presents documentation on snow science, links to Snow Today monthly newsletters, and information on the data sources, including metadata, MEDS capstone Project background, and team bios. Together, this content will minimize a barrier to working with Snow Today data. The deployed Shiny app can be found at [https://shiny.snow.ucsb.edu/snow_today_shiny_app/](https://shiny.snow.ucsb.edu/snow_today_shiny_app/). 
 The source data for the web application was the 19 years of snow cover and albedo data discussed above. These files were processed using Python in a Jupyter Notebook to calculate monthly and annual averages and anomalies for the period of record. These notebooks can be found on the MEDS Snow Today public GitHub repository. A challenge of this data was that the coordinate reference system metadata was not included in a standard format that mapping packages could easily recognize. Spatial information was specified when converting the processed data to GeoTIFF format to address this issue. Raster stacks of daily data for each water year and of the processed GeoTIFFs served as inputs to the Shiny App. 
 
 Interactive visualizations presented on the Shiny app are for the Sierra Nevada region in the Western United States. The app's landing page, “Daily Snow Cover and Albedo,” allows users to view snow properties for any day from October 1, 2000 through September 30, 2019 by selecting a date from the calendar widget. The top map shows snow cover percent, with brighter colors indicating more snow. The bottom map shows albedo for snow-covered areas with darker yellow indicating snow with lower albedo.

@@ -185,21 +185,21 @@ div.csl-indent {
 <div id="required-software-and-packages" class="section level2 hasAnchor" number="6.2">
 <h2><span class="header-section-number">6.2</span> Required Software and Packages<a href="userdoc.html#required-software-and-packages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The Project was completed with open-source software. Python is used to read data files, complete spatial and statistical analysis, and visualize results. All code is stored in the MEDS Snow Today public GitHub repository. Deliverables are visualized in a R Shiny application platform.
-Recommended software to install in order to run Project code: Anaconda-Navigator or Visual Studio Code (plus relevant extensions), and Conda, an open-source package management system (Anaconda 2017).</p>
+Recommended software to install in order to run Project code: Anaconda-Navigator or Visual Studio Code (plus relevant extensions), and Conda, an open-source package management system <span class="citation">(<a href="#ref-conda" role="doc-biblioref">Anaconda 2017</a>)</span>.</p>
 <p><strong>Python Packages</strong></p>
 <ul>
-<li>gdal</li>
-<li>h5py</li>
-<li>imageio</li>
-<li>leafmap</li>
-<li>matplotlib</li>
-<li>numpy</li>
-<li>pandas</li>
-<li>plotly</li>
-<li>rasterio</li>
-<li>rioxarray</li>
-<li>wget</li>
-<li>xarray</li>
+<li>gdal <span class="citation">(<a href="#ref-gdal" role="doc-biblioref">G. contributors 2020</a>)</span></li>
+<li>h5py <span class="citation">(<a href="#ref-hdf5" role="doc-biblioref">Collette 2013</a>)</span></li>
+<li>imageio <span class="citation">(<a href="#ref-imageio" role="doc-biblioref">imageio contributors 2022</a>)</span></li>
+<li>leafmap <span class="citation">(<a href="#ref-leafmap" role="doc-biblioref">Wu 2021</a>)</span></li>
+<li>matplotlib <span class="citation">(<a href="#ref-matplotlib" role="doc-biblioref">Hunter 2007</a>)</span></li>
+<li>numpy <span class="citation">(<a href="#ref-numpy" role="doc-biblioref">Harris et al. 2020</a>)</span></li>
+<li>pandas <span class="citation">(<a href="#ref-pandas" role="doc-biblioref">McKinney and Others 2010</a>)</span></li>
+<li>plotly <span class="citation">(<a href="#ref-plotly" role="doc-biblioref">Inc 2015</a>)</span></li>
+<li>rasterio <span class="citation">(<a href="#ref-rasterio" role="doc-biblioref">Gillies 2022</a>)</span></li>
+<li>rioxarray <span class="citation">(<a href="#ref-rioxarray" role="doc-biblioref">RStudio 2022a</a>)</span></li>
+<li>wget <span class="citation">(<a href="#ref-wget" role="doc-biblioref">Techtonik 2015</a>)</span></li>
+<li>xarray <span class="citation">(<a href="#ref-xarray" role="doc-biblioref">Hoyer and Hamman 2017</a>)</span></li>
 </ul>
 </div>
 <div id="data-and-repository-sources" class="section level2 hasAnchor" number="6.3">
@@ -226,7 +226,7 @@ Project deliverables and code are stored within the MEDS Snow Today GitHub organ
 </div>
 <div id="r-shiny-web-application" class="section level2 hasAnchor" number="6.5">
 <h2><span class="header-section-number">6.5</span> R Shiny Web Application<a href="userdoc.html#r-shiny-web-application" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A prototype web application was developed to showcase our contributions to Snow Today data’s more open-source workflow. The web application, which was developed with R Shiny, presents potential features for the new Snow Today website, interactive visualizations, and tutorials. The web application also presents documentation on snow science, links to Snow Today monthly newsletters, and information on the data sources, including metadata, MEDS capstone Project background, and team bios. Together, this content will minimize a barrier to working with Snow Today data. The deployed Shiny app can be found at <a href="https://shiny.snow.ucsb.edu/snow_today_shiny_app/">https://shiny.snow.ucsb.edu/snow_today_shiny_app/</a>.
+<p>A prototype web application was developed to showcase our contributions to Snow Today data’s more open-source workflow. The web application, which was developed with R Shiny <span class="citation">(<a href="#ref-shiny" role="doc-biblioref">RStudio 2022b</a>)</span>, presents potential features for the new Snow Today website, interactive visualizations, and tutorials. The web application also presents documentation on snow science, links to Snow Today monthly newsletters, and information on the data sources, including metadata, MEDS capstone Project background, and team bios. Together, this content will minimize a barrier to working with Snow Today data. The deployed Shiny app can be found at <a href="https://shiny.snow.ucsb.edu/snow_today_shiny_app/">https://shiny.snow.ucsb.edu/snow_today_shiny_app/</a>.
 The source data for the web application was the 19 years of snow cover and albedo data discussed above. These files were processed using Python in a Jupyter Notebook to calculate monthly and annual averages and anomalies for the period of record. These notebooks can be found on the MEDS Snow Today public GitHub repository. A challenge of this data was that the coordinate reference system metadata was not included in a standard format that mapping packages could easily recognize. Spatial information was specified when converting the processed data to GeoTIFF format to address this issue. Raster stacks of daily data for each water year and of the processed GeoTIFFs served as inputs to the Shiny App.</p>
 <p>Interactive visualizations presented on the Shiny app are for the Sierra Nevada region in the Western United States. The app’s landing page, “Daily Snow Cover and Albedo,” allows users to view snow properties for any day from October 1, 2000 through September 30, 2019 by selecting a date from the calendar widget. The top map shows snow cover percent, with brighter colors indicating more snow. The bottom map shows albedo for snow-covered areas with darker yellow indicating snow with lower albedo.</p>
 <p>On the “Monthly Maps” page, users can select a water year (wy2001 through wy2019) from a drop-down menu, then snow cover percent or albedo from radio buttons. Here, the top map shows the averages of the selected variable for each month, and the bottom map shows the monthly anomaly. For the snow cover anomaly map, red indicates less snow than typical for that month, and blue represents areas with more snow than typical. For the albedo anomaly map, brown indicates lower than average albedo, while purple indicates higher than average albedo. The “Annual Maps” page shows the annual average and anomaly for the selected water year and variable.</p>
@@ -235,6 +235,51 @@ The source data for the web application was the 19 years of snow cover and albed
 <h2><span class="header-section-number">6.6</span> Troubleshooting<a href="userdoc.html#troubleshooting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If users experience issues in either the Shiny app or tutorials, they can submit an issue to the <a href="https://github.com/MEDSsnowtoday">MEDS Snow Today Capstone Github Repository</a>.</p>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-conda" class="csl-entry">
+Anaconda, Inc. 2017. <span>“Conda—Conda 4.13.0 Documentation. Revision F072c34d.”</span> <a href="https://docs.conda.io/projects/conda/en/latest/index.html">https://docs.conda.io/projects/conda/en/latest/index.html</a>.
+</div>
+<div id="ref-hdf5" class="csl-entry">
+Collette, A. 2013. <span>“Python and Hdf5 (First Release).”</span> <em>O’Reilly</em>. <a href="https://learning.oreilly.com/library/view/python-and-hdf5/9781491944981/">https://learning.oreilly.com/library/view/python-and-hdf5/9781491944981/</a>.
+</div>
+<div id="ref-gdal" class="csl-entry">
+contributors, GDAL/OGR. 2020. <span>“GDAL/OGR Geospatial Data Abstraction Software Library.”</span> <a href="https://gdal.org">https://gdal.org</a>.
+</div>
+<div id="ref-imageio" class="csl-entry">
+contributors, imageio. 2022. <span>“Imageio Documentation. Release 2.19.3.”</span> <a href="https://imageio.readthedocs.io/en/stable/">https://imageio.readthedocs.io/en/stable/</a>.
+</div>
+<div id="ref-rasterio" class="csl-entry">
+Gillies, S. 2022. <span>“Rasterio Documentation.”</span> <a href="https://rasterio.readthedocs.io/en/latest/">https://rasterio.readthedocs.io/en/latest/</a>.
+</div>
+<div id="ref-numpy" class="csl-entry">
+Harris, Charles R., K. Jarrod Millman, Stéfan J. van der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, et al. 2020. <span>“Array Programming with <span>NumPy</span>.”</span> <em>Nature</em> 585 (7825): 357–62. <a href="https://doi.org/10.1038/s41586-020-2649-2">https://doi.org/10.1038/s41586-020-2649-2</a>.
+</div>
+<div id="ref-xarray" class="csl-entry">
+Hoyer, S., and J. Hamman. 2017. <span>“Xarray: <span>N-D</span> Labeled Arrays and Datasets in <span>Python</span>.”</span> <em>In Revision, J. Open Res. Software</em>.
+</div>
+<div id="ref-matplotlib" class="csl-entry">
+Hunter, J. D. 2007. <span>“Matplotlib: A 2d Graphics Environment.”</span> <em>Computing in Science &amp; Engineering</em>.
+</div>
+<div id="ref-plotly" class="csl-entry">
+Inc, P. T. 2015. <span>“Collaborative Data Science. Montreal, QC: Plotly Technologies Inc.”</span> <a href="https://plot.ly">https://plot.ly</a>.
+</div>
+<div id="ref-pandas" class="csl-entry">
+McKinney, W., and Others. 2010. <span>“Data Structures for Statistical Computing in Python.”</span> <em>Proceedings of the 9th Python in Science Conference</em>.
+</div>
+<div id="ref-rioxarray" class="csl-entry">
+RStudio. 2022a. <span>“Rioxarray Documentation. Release 0.11.0.”</span> <a href="https://corteva.github.io/rioxarray/stable/index.html">https://corteva.github.io/rioxarray/stable/index.html</a>.
+</div>
+<div id="ref-shiny" class="csl-entry">
+———. 2022b. <span>“Shiny from RStudio.”</span> <a href="https://shiny.rstudio.com/">https://shiny.rstudio.com/</a>.
+</div>
+<div id="ref-wget" class="csl-entry">
+Techtonik, A. 2015. <span>“Wget Documentation. Release 3.2.”</span> <a href="https://pypi.org/project/wget/">https://pypi.org/project/wget/</a>.
+</div>
+<div id="ref-leafmap" class="csl-entry">
+Wu, Q. 2021. <span>“Leafmap: A Python Package for Interactive Mapping and Geospatial Analysis with Minimal Coding in a Jupyter Environment.”</span> <em>Journal of Open Source Software</em>. <a href="https://doi.org/10.21105/joss.034">https://doi.org/10.21105/joss.034</a>.
 </div>
 </div>
             </section>
