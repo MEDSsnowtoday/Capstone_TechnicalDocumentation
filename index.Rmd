@@ -41,7 +41,7 @@ library(shiny)
 ```
 
 
-![test](images/ConvictLake.jpg)
+![](images/ConvictLake.jpg)
 
 ```{r convict, auto_pdf = TRUE, fig.height = 6}
 
@@ -56,3 +56,5 @@ Wit-sa-nap, or Convict Lake. Sierra Nevada mountains, Mono County, California. <
 ```{r, auto_pdf = TRUE, fig.align = 'center', fig.height = 4}
 knitr::include_graphics("images/hexes.png")
 ```
+
+
