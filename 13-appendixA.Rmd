@@ -1,0 +1,7 @@
+# Appendix A: Solution Design Workflow {#appendixa}
+
+```{r, auto_pdf = TRUE, echo=FALSE, message = FALSE, warning = FALSE, fig.cap="Capstone Project Solution Design"}
+
+knitr::include_graphics("images/Solution_design_TD.png")
+
+```

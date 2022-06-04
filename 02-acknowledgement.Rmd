@@ -1,3 +1,31 @@
 # Acknowledgements {-}
 
-test
+We would like to express our appreciation to all those who helped support and guide our Project. 
+
+**Faculty Advisors**
+
+Dr. Sam Stevenson, Bren School of Environmental Science & Management<br>
+Dr. Allison Horst, Bren School of Environmental Science & Management<br>
+
+**Clients**
+
+Dr. Timbo Stillinger, UCSB Earth Research Institute<br>
+Dr. Ned Bair, UCSB Earth Research Institute<br>
+Dr. Karl Rittger, CU Boulder Institute for Arctic and Alpine Research<br>
+
+**External Advisors**
+
+Kat Le, Bren School of Environmental Science & Management <br>
+Niklas Griessbaum, Bren School of Environmental Science & Management<br>
+Dr. James Frew, Bren School of Environmental Science & Management<br>
+Aaron Martin, UCSB General Research IT<br>
+Mike Colee, UCSB General Research IT<br>
+
+**Special Thanks**
+
+Jamie Montgomery, Bren School of Environmental Science & Management<br>
+Samantha Csik, National Center for Ecological Analysis & Synthesis<br>
+Brad Hill, Bren School of Environmental Science & Management<br>
+UCSB General Research Information & Technology team<br>
+National Snow and Ice Data Center Information & Technology team<br>
+and the endlessly supportive Master of Environmental Data Science cohort<br>

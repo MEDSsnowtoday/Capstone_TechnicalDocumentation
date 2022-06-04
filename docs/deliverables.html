@@ -54,6 +54,14 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.23/datatables.js"></script>
+<link href="libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 
 
 
@@ -101,21 +109,24 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
 <li class="chapter" data-level="" data-path="executive-summary.html"><a href="executive-summary.html"><i class="fa fa-check"></i>Executive Summary</a></li>
-<li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Background &amp; Significance</a>
+<li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Problem Statement</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="background.html"><a href="background.html#project-background"><i class="fa fa-check"></i><b>1.1</b> Project Background</a></li>
 <li class="chapter" data-level="1.2" data-path="background.html"><a href="background.html#project-significance"><i class="fa fa-check"></i><b>1.2</b> Project Significance</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>2</b> Project Objectives</a></li>
-<li class="chapter" data-level="3" data-path="solution.html"><a href="solution.html"><i class="fa fa-check"></i><b>3</b> Solution Design</a>
+<li class="chapter" data-level="2" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>2</b> Project Objectives</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="solution.html"><a href="solution.html#approach-and-methods"><i class="fa fa-check"></i><b>3.1</b> Approach and Methods</a></li>
+<li class="chapter" data-level="2.1" data-path="objectives.html"><a href="objectives.html#objectives-1"><i class="fa fa-check"></i><b>2.1</b> Objectives</a></li>
+<li class="chapter" data-level="2.2" data-path="objectives.html"><a href="objectives.html#website-recommendations"><i class="fa fa-check"></i><b>2.2</b> Website Recommendations</a></li>
+<li class="chapter" data-level="2.3" data-path="objectives.html"><a href="objectives.html#interactive-visualizations"><i class="fa fa-check"></i><b>2.3</b> Interactive Visualizations</a></li>
+<li class="chapter" data-level="2.4" data-path="objectives.html"><a href="objectives.html#tutorials"><i class="fa fa-check"></i><b>2.4</b> Tutorials</a></li>
 </ul></li>
+<li class="chapter" data-level="3" data-path="solution.html"><a href="solution.html"><i class="fa fa-check"></i><b>3</b> Solution Design</a></li>
 <li class="chapter" data-level="4" data-path="deliverables.html"><a href="deliverables.html"><i class="fa fa-check"></i><b>4</b> Products and Deliverables</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="deliverables.html"><a href="deliverables.html#website-recommendations"><i class="fa fa-check"></i><b>4.1</b> Website Recommendations</a></li>
-<li class="chapter" data-level="4.2" data-path="deliverables.html"><a href="deliverables.html#interactive-visualizations"><i class="fa fa-check"></i><b>4.2</b> Interactive Visualizations</a></li>
-<li class="chapter" data-level="4.3" data-path="deliverables.html"><a href="deliverables.html#tutorials"><i class="fa fa-check"></i><b>4.3</b> Tutorials</a></li>
+<li class="chapter" data-level="4.1" data-path="deliverables.html"><a href="deliverables.html#website-recommendations-1"><i class="fa fa-check"></i><b>4.1</b> Website Recommendations</a></li>
+<li class="chapter" data-level="4.2" data-path="deliverables.html"><a href="deliverables.html#interactive-visualizations-1"><i class="fa fa-check"></i><b>4.2</b> Interactive Visualizations</a></li>
+<li class="chapter" data-level="4.3" data-path="deliverables.html"><a href="deliverables.html#tutorials-1"><i class="fa fa-check"></i><b>4.3</b> Tutorials</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="testing.html"><a href="testing.html"><i class="fa fa-check"></i><b>5</b> Summary of Testing</a>
 <ul>
@@ -133,15 +144,18 @@ div.csl-indent {
 <li class="chapter" data-level="6.4.1" data-path="userdoc.html"><a href="userdoc.html#accessing-data-and-metadata"><i class="fa fa-check"></i><b>6.4.1</b> Accessing Data and Metadata</a></li>
 <li class="chapter" data-level="6.4.2" data-path="userdoc.html"><a href="userdoc.html#convert-data-files-and-visualize"><i class="fa fa-check"></i><b>6.4.2</b> Convert Data Files and Visualize</a></li>
 <li class="chapter" data-level="6.4.3" data-path="userdoc.html"><a href="userdoc.html#data-analysis"><i class="fa fa-check"></i><b>6.4.3</b> Data Analysis</a></li>
-<li class="chapter" data-level="6.4.4" data-path="userdoc.html"><a href="userdoc.html#r-shiny-application"><i class="fa fa-check"></i><b>6.4.4</b> R Shiny Application</a></li>
-<li class="chapter" data-level="6.4.5" data-path="userdoc.html"><a href="userdoc.html#troublshooting"><i class="fa fa-check"></i><b>6.4.5</b> Troublshooting</a></li>
 </ul></li>
+<li class="chapter" data-level="6.5" data-path="userdoc.html"><a href="userdoc.html#r-shiny-web-application"><i class="fa fa-check"></i><b>6.5</b> R Shiny Web Application</a></li>
+<li class="chapter" data-level="6.6" data-path="userdoc.html"><a href="userdoc.html#troubleshooting"><i class="fa fa-check"></i><b>6.6</b> Troubleshooting</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="archive.html"><a href="archive.html"><i class="fa fa-check"></i><b>7</b> Archive Access</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="archive.html"><a href="archive.html#data-to-retain"><i class="fa fa-check"></i><b>7.1</b> Data to Retain</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="8" data-path="appendixa.html"><a href="appendixa.html"><i class="fa fa-check"></i><b>8</b> Appendix A: Solution Design Workflow</a></li>
+<li class="chapter" data-level="9" data-path="appendixb.html"><a href="appendixb.html"><i class="fa fa-check"></i><b>9</b> Appendix B: Website Architecture</a></li>
+<li class="chapter" data-level="10" data-path="appendixc.html"><a href="appendixc.html"><i class="fa fa-check"></i><b>10</b> Appendix C: Wireframe</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/MEDSsnowtoday/Technical_Documentation" target="blank">Published with bookdown</a></li>
 
@@ -164,30 +178,33 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="deliverables" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Section 4</span> Products and Deliverables<a href="deliverables.html#deliverables" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>The Snow Today Group produced three deliverable to achieve the Project objective of improving the usability of snow remote sensing data:</p>
+<p>The Snow Today Group produced three deliverables to achieve the Project objective of improving the usability of snow remote sensing data:</p>
 <ul>
-<li>Created recommendations for an information architecture plan and wireframe mockups of proposed Snow Today website;</li>
+<li>Created recommendations for an information architecture plan and wireframe mockups of the proposed Snow Today website;</li>
 <li>Developed visuals of snow cover area and albedo on an interactive website application; and</li>
 <li>Generated “How To” example tutorials to guide various end users through the process of using the data to extract meaningful insights.</li>
 </ul>
-<div id="website-recommendations" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Website Recommendations<a href="deliverables.html#website-recommendations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The website recommendations provide features, user selection options, pages and aesthetics to facilitate future discussions between the clients and NSIDC web developers who will create the new expanded Snow Today website.</p>
+<div id="website-recommendations-1" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Website Recommendations<a href="deliverables.html#website-recommendations-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Website recommendations were created to facilitate future discussions between the Clients and NSIDC web developers. These recommendations include an information architecture plan and wireframe mockup, and suggest updates to features, user selection options, pages, and aesthetics. NSIDC web developers will create the new and expanded Snow Today website informed by the Project’s recommendations. These recommendations provide a smooth user experience, present new albedo visualizations, and integrate an expanded geographic extent that includes North America, Greenland, and High Mountain Asia. Evaluating the uncertainty of the SPIReS model was outside the scope of this Project, and we suggest that the Clients include a statement quantifying the uncertainty of Snow Today products and steps taken to minimize uncertainty.</p>
+<p>The Project’s Snow Today website wireframe provides layout recommendations for the Snow Today website page order, content, and visualizations. The wireframe consists of six pages, which include a landing page, an about page, a page for the researchers’ monthly newsletters titled “Insights,” snow science research and data pages, and a page dedicated to tutorials. The Snow Today website landing page currently hosts the researchers’ monthly newsletter. We suggest that they update the landing page with a short introduction to Snow Today research and what is available to users on the website. Also, the landing page should host an interactive spatial visualization where a user can select a data variable, such as snow cover or albedo, select a time period or relevant date, and zoom to a particular region of interest. This visualization should populate with North America, Greenland, and High Mountain Asia data. The landing page should also link to the data and tutorial pages to facilitate ease of access to the data and how to use it. The Group recommends adding a page dedicated to snow science research, which would provide a short background on snow hydrology, snow data variables, and the Snow Today researchers’ SPIReS model <span class="citation">(<a href="#ref-bair2021" role="doc-biblioref">Bair and J. Dozier 2019</a>)</span>. This page could also host additional static or interactive snow condition data visualizations. The Project recommends expanding the current data page content by adding general information on remote sensing data and the data Snow Today researchers are creating, including relevant metadata information. The Group recommends that the Clients change the existing metadata creation process to increase the data’s geospatial interpretability. The Snow Today researchers could create a GitHub organization repository similar to this Project to facilitate ease of access to their environmental models and data processing repositories. Currently, these repositories are hosted on the researchers’ personal GitHub accounts, which are not linked on the current website. A tutorial page was added to host the Python-based tutorials created by this Project and a potential future Snow Today YouTube channel that would host additional video-based tutorials, webinars, and training.</p>
+<p>The current Snow Today website focuses on current snow conditions. We recommend additional features to easily allow users to view snow properties for a specific selected date or snow properties aggregated for monthly or annual timeframes. Similarly, we recommend additional spatial selection options. The current website only allows users to view the entire western US, specific states, or hydrologic unit code. We recommend that the updated Snow Today website include interactivity that allows users to zoom in and out on areas of interest. Another potentially useful feature would be a way for users to upload their own shapefiles to customize the area of interest further. For example, a water manager could be interested in viewing snow properties near specific reservoirs or for a specific watershed.
+Real-time data integration is not within the scope of this Project. However, once developed, our workflow can be incorporated into the future Snow Today website and adapted to update the interactive visuals with real-time data continuously.</p>
 </div>
-<div id="interactive-visualizations" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Interactive Visualizations<a href="deliverables.html#interactive-visualizations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Visualizations include interactive charts and maps of snow cover and albedo to display the change in these parameters over space and time. All visualizations are presented on the Snow Today Shiny application.</p>
+<div id="interactive-visualizations-1" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Interactive Visualizations<a href="deliverables.html#interactive-visualizations-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Visualizations include interactive charts and maps of snow cover and albedo to display the change in these parameters over space and time. All visualizations are presented on the Snow Today Shiny application, which can be found at <a href="https://shiny.snow.ucsb.edu/snow_today_shiny_app/">https://shiny.snow.ucsb.edu/snow_today_shiny_app/</a>. This app is a prototype of the suggestions included in the wireframe. Currently, the Shiny app only displays data for the Sierra Nevada region from water year 2001 through water year 2019. It allows users to select any date between October 1, 2000 (water year 2001) and September 30, 2019 (water year 2019) and visualize snow cover percent and albedo on that day. Users can zoom in/out of the maps to view specific regions. In addition, users are able to visualize annual and monthly means and anomalies. The Shiny app includes documentation on snow science definitions and the data used in this Project as well as links to the tutorials discussed below.</p>
 </div>
-<div id="tutorials" class="section level2 hasAnchor" number="4.3">
-<h2><span class="header-section-number">4.3</span> Tutorials<a href="deliverables.html#tutorials" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Tutorials based in python were created to facilitate expanded use of output HDF5 files from ERI’s Snow Property Inversion From Remote Sensing (SPIReS) model that contain snow cover fraction and snow albedo data <span class="citation">(<a href="#ref-spires2021" role="doc-biblioref">Bair, Stillinger, and Dozier 2021</a>)</span>.</p>
+<div id="tutorials-1" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Tutorials<a href="deliverables.html#tutorials-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Tutorials based in Python were created to facilitate expanded use of snow cover and albedo HDF5 files from ERI’s Snow Property Inversion From Remote Sensing (SPIReS) model. The tutorials are intended to walk users through ways to comprehend and utilize the data used to make visualizations on the Snow Today website. The tutorials are for an audience with basic Python experience, but a previous understanding of multidimensional climate data is not required. The first tutorial focuses on walking users through the steps to open HDF5 files, explore metadata, and perform basic visualizations. The second tutorial provides instructions on calculating monthly and yearly means and anomalies of snow and albedo data, ways to convert data to GeoTIFF and NetCDF formats, and ways to create interactive maps. These GeoTIFF can be either individual files or raster stacks. The third tutorial focuses on calculating data statistics such as interquartile ranges and daily averages, then visualizing these values on interactive charts. While tutorials only use historic data from 2001 to 2019, the skills gained from the tutorials can be applied to present data.</p>
 
 </div>
 </div>
-<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3>References</h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-spires2021" class="csl-entry">
-Bair, E. H., T. Stillinger, and J. Dozier. 2021. <span>“Snow Property Inversion from Remote Sensing (SPIReS): A Generalized Multispectral Unmixing Approach with Examples from MODIS and Landsat 8 OLI.”</span> <em>IEEE Transactions on Geoscience and Remote Sensing</em> 59 (09): 7270–84. <a href="https://doi.org/10.1109/TGRS.2020.3040328">https://doi.org/10.1109/TGRS.2020.3040328</a>.
+<div id="ref-bair2021" class="csl-entry">
+Bair, E. H., and T. Stillinger abd J. Dozier. 2019. <span>“Snow Property Inversion from Remote Sensing (SPIReS): A Generalized Multispectral Unmixing Approach with Examples from MODIS and Landsat 8 OLI.”</span> <em>IEEE Transactions on Geoscience and Remote Sensing</em> 59 (09): 7270–84. <a href="https://doi.org/10.1109/TGRS.2020.3040328">https://doi.org/10.1109/TGRS.2020.3040328</a>.
 </div>
 </div>
             </section>

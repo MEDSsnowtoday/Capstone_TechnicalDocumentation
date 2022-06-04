@@ -1,0 +1,13 @@
+# Appendix B: Website Architecture {#appendixb}
+
+```{r, auto_pdf = TRUE, echo=FALSE, message = FALSE, warning = FALSE, fig.cap="Current Snow Today Website Architecture"}
+
+knitr::include_graphics("images/ArchCurrent.png")
+
+```
+
+```{r, auto_pdf = TRUE, echo=FALSE, message = FALSE, warning = FALSE, fig.cap="Recommended Snow Today Website Architecture"}
+
+knitr::include_graphics("images/ArchRec.png")
+
+```

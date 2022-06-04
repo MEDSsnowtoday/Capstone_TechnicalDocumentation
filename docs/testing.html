@@ -54,6 +54,14 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.23/datatables.js"></script>
+<link href="libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 
 
 
@@ -101,21 +109,24 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
 <li class="chapter" data-level="" data-path="executive-summary.html"><a href="executive-summary.html"><i class="fa fa-check"></i>Executive Summary</a></li>
-<li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Background &amp; Significance</a>
+<li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Problem Statement</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="background.html"><a href="background.html#project-background"><i class="fa fa-check"></i><b>1.1</b> Project Background</a></li>
 <li class="chapter" data-level="1.2" data-path="background.html"><a href="background.html#project-significance"><i class="fa fa-check"></i><b>1.2</b> Project Significance</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>2</b> Project Objectives</a></li>
-<li class="chapter" data-level="3" data-path="solution.html"><a href="solution.html"><i class="fa fa-check"></i><b>3</b> Solution Design</a>
+<li class="chapter" data-level="2" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>2</b> Project Objectives</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="solution.html"><a href="solution.html#approach-and-methods"><i class="fa fa-check"></i><b>3.1</b> Approach and Methods</a></li>
+<li class="chapter" data-level="2.1" data-path="objectives.html"><a href="objectives.html#objectives-1"><i class="fa fa-check"></i><b>2.1</b> Objectives</a></li>
+<li class="chapter" data-level="2.2" data-path="objectives.html"><a href="objectives.html#website-recommendations"><i class="fa fa-check"></i><b>2.2</b> Website Recommendations</a></li>
+<li class="chapter" data-level="2.3" data-path="objectives.html"><a href="objectives.html#interactive-visualizations"><i class="fa fa-check"></i><b>2.3</b> Interactive Visualizations</a></li>
+<li class="chapter" data-level="2.4" data-path="objectives.html"><a href="objectives.html#tutorials"><i class="fa fa-check"></i><b>2.4</b> Tutorials</a></li>
 </ul></li>
+<li class="chapter" data-level="3" data-path="solution.html"><a href="solution.html"><i class="fa fa-check"></i><b>3</b> Solution Design</a></li>
 <li class="chapter" data-level="4" data-path="deliverables.html"><a href="deliverables.html"><i class="fa fa-check"></i><b>4</b> Products and Deliverables</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="deliverables.html"><a href="deliverables.html#website-recommendations"><i class="fa fa-check"></i><b>4.1</b> Website Recommendations</a></li>
-<li class="chapter" data-level="4.2" data-path="deliverables.html"><a href="deliverables.html#interactive-visualizations"><i class="fa fa-check"></i><b>4.2</b> Interactive Visualizations</a></li>
-<li class="chapter" data-level="4.3" data-path="deliverables.html"><a href="deliverables.html#tutorials"><i class="fa fa-check"></i><b>4.3</b> Tutorials</a></li>
+<li class="chapter" data-level="4.1" data-path="deliverables.html"><a href="deliverables.html#website-recommendations-1"><i class="fa fa-check"></i><b>4.1</b> Website Recommendations</a></li>
+<li class="chapter" data-level="4.2" data-path="deliverables.html"><a href="deliverables.html#interactive-visualizations-1"><i class="fa fa-check"></i><b>4.2</b> Interactive Visualizations</a></li>
+<li class="chapter" data-level="4.3" data-path="deliverables.html"><a href="deliverables.html#tutorials-1"><i class="fa fa-check"></i><b>4.3</b> Tutorials</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="testing.html"><a href="testing.html"><i class="fa fa-check"></i><b>5</b> Summary of Testing</a>
 <ul>
@@ -133,15 +144,18 @@ div.csl-indent {
 <li class="chapter" data-level="6.4.1" data-path="userdoc.html"><a href="userdoc.html#accessing-data-and-metadata"><i class="fa fa-check"></i><b>6.4.1</b> Accessing Data and Metadata</a></li>
 <li class="chapter" data-level="6.4.2" data-path="userdoc.html"><a href="userdoc.html#convert-data-files-and-visualize"><i class="fa fa-check"></i><b>6.4.2</b> Convert Data Files and Visualize</a></li>
 <li class="chapter" data-level="6.4.3" data-path="userdoc.html"><a href="userdoc.html#data-analysis"><i class="fa fa-check"></i><b>6.4.3</b> Data Analysis</a></li>
-<li class="chapter" data-level="6.4.4" data-path="userdoc.html"><a href="userdoc.html#r-shiny-application"><i class="fa fa-check"></i><b>6.4.4</b> R Shiny Application</a></li>
-<li class="chapter" data-level="6.4.5" data-path="userdoc.html"><a href="userdoc.html#troublshooting"><i class="fa fa-check"></i><b>6.4.5</b> Troublshooting</a></li>
 </ul></li>
+<li class="chapter" data-level="6.5" data-path="userdoc.html"><a href="userdoc.html#r-shiny-web-application"><i class="fa fa-check"></i><b>6.5</b> R Shiny Web Application</a></li>
+<li class="chapter" data-level="6.6" data-path="userdoc.html"><a href="userdoc.html#troubleshooting"><i class="fa fa-check"></i><b>6.6</b> Troubleshooting</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="archive.html"><a href="archive.html"><i class="fa fa-check"></i><b>7</b> Archive Access</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="archive.html"><a href="archive.html#data-to-retain"><i class="fa fa-check"></i><b>7.1</b> Data to Retain</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="8" data-path="appendixa.html"><a href="appendixa.html"><i class="fa fa-check"></i><b>8</b> Appendix A: Solution Design Workflow</a></li>
+<li class="chapter" data-level="9" data-path="appendixb.html"><a href="appendixb.html"><i class="fa fa-check"></i><b>9</b> Appendix B: Website Architecture</a></li>
+<li class="chapter" data-level="10" data-path="appendixc.html"><a href="appendixc.html"><i class="fa fa-check"></i><b>10</b> Appendix C: Wireframe</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/MEDSsnowtoday/Technical_Documentation" target="blank">Published with bookdown</a></li>
 
@@ -164,18 +178,19 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="testing" class="section level1 hasAnchor" number="5">
 <h1><span class="header-section-number">Section 5</span> Summary of Testing<a href="testing.html#testing" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Evaluation of our products and web application’s functionality and usability was completed by the Snow Today group.</p>
+<p>The Snow Today Group completed an evaluation of our products and web application functionality through unit testing, sanity testing, and system testing. Unit testing was performed to ensure that the code ran as intended and that visualizations were appropriately rendered. Sanity testing was used to ensure our end-products were oriented and located in the correct position and logically made sense. System testing involved testing web-based and Binder environments’ speed, stability, and operability.</p>
 <div id="unit-testing" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Unit Testing<a href="testing.html#unit-testing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Unit testing made sure that each visualization rendered properly on the Shiny app website and that the visualizations’ interactive components worked.</p>
+<p>Unit testing ensured that each visualization was correctly rendered on the Shiny app website and that the interactive components’ visualizations worked. We also confirmed that selection options return the desired outputs. Each tab was tested on its own before testing overall site navigation and operability. Group members tested individual code chunks and sections of the tutorials before finalizing them for end-users. Ultimately, the Project incorporated 19 years’ worth of data contained within multiple datasets. We started by testing the app and tutorial functionality with a few years of data before deploying the full spatial, temporal, and historical snow cover and albedo records.</p>
 </div>
 <div id="sanity-testing" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Sanity Testing<a href="testing.html#sanity-testing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The Group ensured that our products produced realistic results. Sanity testing was completed by all group members.</p>
+<p>The Group ensured that our products produced realistic results. All Group members completed sanity testing. For example, did interactive visualizations display snow cover outside of the Sierra Nevada mountain range or during the summer months? Given that the Sierra Nevada region is not currently a selectable zone on the Snow Today website, our Group could not directly compare our results to Snow Today’s findings. However, our Group compared relative values to overlapping and close-proximity locations, including California and the Pacific Northwest. Since accurately incorporating coordinate reference system and projection information was an essential component of this Project, sanity testing confirmed that no visualizations were rendered backward or upside down due to errors with coordinate system transformation. We also confirmed that visualizations and tutorials returned albedo values within realistic ranges. For example, early iterations of the albedo visualizations displayed a smaller snow area than the snow cover percent visualizations. This alerted the Group to an error in the way “nan” values were addressed when calculating monthly and annual averages, and this issue was then resolved.</p>
 </div>
 <div id="system-testing" class="section level2 hasAnchor" number="5.3">
 <h2><span class="header-section-number">5.3</span> System Testing<a href="testing.html#system-testing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Once the above tests were complete, system testing was conducted to ensure the operability of the web application and tutorials as a whole.</p>
+<p>Once the above tests were complete, system testing was conducted to ensure the operability of the web application and tutorials as a whole. System testing focused on navigation across the entire Shiny app to test the functionality of moving between visualizations and pages and from the Shiny app to the tutorials on the Snow Today organization’s public GitHub. A significant limitation to the Shiny app is the speed at which maps render.
+Initially, the tutorials would be stored in a Binder notebook–a reproducible environment that makes tutorials immediately executable to any user. However, system testing determined that given Binder’s limited memory capacity, the tutorials could not render the notebooks successfully. Future developers interested in using Binder environments should consider researching additional methods to increase Binder’s memory capacity.</p>
 
 </div>
 </div>

@@ -1,3 +1,18 @@
 # Project Objectives {#objectives}
 
-This Project’s goal was to improve the usability of snow data through web-based visualizations and tutorials by creating an open source workflow for processing and visualizing snow data. 
+## Objectives
+
+This Project’s goal was to improve the usability of snow data through web-based visualizations and tutorials by creating an open-source workflow for processing and visualizing snow data. We achieved this goal by improving users’ usability of the data, creating an interactive web application to visualize the expanded and geographical extent of Snow Today products, and offering suggestions to enhance users’ experience. 
+
+## Website Recommendations
+
+The Group provided the Clients with recommendations to improve the Snow Today website framework, navigation, and visualizations. These suggestions include improvements to the website’s aesthetics with an emphasis on updated content, data access, and engaging interactive data visualizations. 
+
+## Interactive Visualizations
+
+The Snow Today Project provided the Clients with suggestions on how to display the newly expanded data scope on the Snow Today website through interactive visualizations. Interactive charts and geospatial maps were developed to display daily, monthly, and annual snow cover and albedo values to help users gain meaningful insights into the snow-related datasets. For example, scientists may be interested in displaying this year’s albedo measurements and compare those measurements with historical values to help predict temporal trends and identify seasonal anomalies. 
+
+## Tutorials
+
+Snow Today’s snow cover and albedo datasets are stored in an HDF5 file structure, which can be challenging to navigate for users unfamiliar with the data’s structure. In addition, the dataset’s metadata is in a non-standardized format, making it difficult for certain geospatial software and Python packages to interpret the stored data. As such, the Snow Today Group thought it would be helpful to develop Python-based notebook tutorials to provide end-users with instructions on accessing, analyzing, and visualizing 19 years’ worth of snow cover and albedo data. The tutorials include steps to embed geographic information and transform datasets into more familiar and easily interoperable file types, such as GeoTIFFs and NetCDF file formats. These tutorials are meant to improve the ease of use of the datasets to interested users.
+

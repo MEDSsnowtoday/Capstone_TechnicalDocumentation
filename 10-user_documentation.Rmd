@@ -2,43 +2,66 @@
 
 ## Overview
 
+This user documentation aims to guide end users on how to properly install and use the Project’s snow data tutorials and navigate the data visualization web application.
 
 
 ## Required Software and Packages
+
+The Project was completed with open-source software. Python is used to read data files, complete spatial and statistical analysis, and visualize results. All code is stored in the MEDS Snow Today public GitHub repository. Deliverables are visualized in a R Shiny application platform.
+Recommended software to install in order to run Project code: Anaconda-Navigator or Visual Studio Code (plus relevant extensions), and Conda, an open-source package management system (Anaconda 2017).
+
+**Python Packages**
+
+- gdal
+- h5py
+- imageio
+- leafmap
+- matplotlib
+- numpy
+- pandas
+- plotly
+- rasterio
+- rioxarray
+- wget
+- xarray
 
 
 ## Data and Repository Sources
 
 The Project presents data on snow cover area and albedo. The Snow Today Group accessed data from ERI, which hosts a repository of historical snow condition data. These files were created using the SPIReS model and are outputted in an HDF5 format (.H5 files). The SPIReS HDF files contain 19 years of snow cover and albedo data. There is one file for each year, and this Project accessed the files from 2001 to 2019. All data used for the Project are publicly available, and there are no limitations to how others can use the data. 
 
+Metadata is documented on the Project’s R Shiny application in an easy-to-find tab and a readme.txt file. This documentation explains the structure of the file types, timeframes, geographic extents, available variables, coordinate system, and units. The Client indicated that some Snow Today users prefer GeoTIFF files over the HDF5 file format. As such, the tutorials walk users through ways to convert the HDF5 files into GeoTIFFs and explain different aspects of the metadata, including projection information, cell size, projection type, and a variety of other variables. Doing so effectively increases the data’s accessibility and reduces the time users need to comprehend and utilize the snow cover and albedo datasets. 
+Project deliverables and code are stored within the MEDS Snow Today GitHub organization and the  UCSB Ylaipi GRIT server. The R Shiny web application is hosted on the  UCSB Ylaipi GRIT server. Links to these resources are listed in the [Archive Access](#archive) section of this document.
 
 ## Exploring the Data
 
 ### Accessing Data and Metadata
 
-Snow cover and albedo datasets are stored...
+Snow cover and albedo datasets are stored on UCSB’s General Research IT (GRIT) server and can be accessed using a link within the tutorial notebooks. 
+
+Snow cover and albedo datasets are stored in a hierarchical data format, HDF5, which is designed to store and organize large amounts of data. HDF5 simplifies the file structure to include only two major types of objects: datasets and groups. As such, snow cover and albedo datasets are structured into “Grid”(group) --> “MODIS_GRID_500m”(group) --> variable(s)(dataset). The tutorial page includes ways to access the metadata and view the file structure using Python processes. In addition, links to external software are provided to view the dataset structure quickly and easily. 
 
 ### Convert Data Files and Visualize
 
-
+Geospatial software and Python packages have trouble interpreting Snow Today’s snow-related dataset’s metadata, making it difficult to visualize the data spatially. As such, tutorials have been provided to subset, clean, reproject, and convert the snow-related datasets into GeoTIFFs and NetCDF file formats. Doing so allows the users to reproject the data into a more easily interpretable format by geospatial software and packages. The tutorials also include a method to visualize geospatially referenced raster data on an interactive map. A separate tutorial is included to visualize and compare yearly snow cover extent and albedo percentages. 
 
 ### Data Analysis
 
+Users may be interested in using Snow Today’s snow and albedo datasets to help answer scientific queries. As such, tutorials have been supplied to help users process and subset the datasets. The tutorials include ways to clean the data, calculate the monthly and annual average snow cover extent and albedo percentages, and steps to calculate monthly anomalies.
 
-### R Shiny Application 
+## R Shiny Web Application
 
-A prototype web application was developed to showcase our contributions towards a more open source workflow for Snow Today data. The web application, which was developed with R Shiny, presents potential features for the new Snow Today website, interactive visualizations, and tutorials. The web application also presents documentation on snow science, links to Snow Today monthly newsletters, information on the data sources including metadata, MEDS capstone project background, and team bios. Together, this content will minimize a barrier to working with Snow Today data.
-Interactive visualizations presented on the Shiny app are for the Sierra region in the Western United States. The landing page, “Daily Snow Cover and Albedo,” of the app allows users to view snow properties for any day from October 1, 2000 through September 30, 2019 by selecting a date from the calendar widget. The top map shows snow cover percent with brighter colors indicating more snow. The bottom map shows albeo for snow covered areas with darker yellow indicating snow with lower albedo.
-The Project deliverables are hosted on an R Shiny application. This application hosts pages displaying snow data visualizations, snow science glossary, Snow Today monthly newsletters, links to access Snow Today SPIReS data, a project About page, and the Project’s tutorials. 
+A prototype web application was developed to showcase our contributions to Snow Today data’s more open-source workflow. The web application, which was developed with R Shiny, presents potential features for the new Snow Today website, interactive visualizations, and tutorials. The web application also presents documentation on snow science, links to Snow Today monthly newsletters, and information on the data sources, including metadata, MEDS capstone Project background, and team bios. Together, this content will minimize a barrier to working with Snow Today data. The deployed Shiny app can be found at [https://shiny.snow.ucsb.edu/snow_today_shiny_app/](https://shiny.snow.ucsb.edu/snow_today_shiny_app/). 
+The source data for the web application was the 19 years of snow cover and albedo data discussed above. These files were processed using Python in a Jupyter Notebook to calculate monthly and annual averages and anomalies for the period of record. These notebooks can be found on the MEDS Snow Today public GitHub repository. A challenge of this data was that the coordinate reference system metadata was not included in a standard format that mapping packages could easily recognize. Spatial information was specified when converting the processed data to GeoTIFF format to address this issue. Raster stacks of daily data for each water year and of the processed GeoTIFFs served as inputs to the Shiny App. 
 
-On the “Monthly Maps” page, users can select a water year (wy2001 through wy2019) from a drop down menu thensnow cover percent or albedo from radio buttons. Here, the top map shows averages of the selected variable for each month and the bottom map shows the monthly anomaly. For the snow cover anomaly map, red indicates less snow than typical for that month and blue represents areas with more snow than typical for that month. For the albedo anomaly map, brown indicates lower than average albedo while purple indicates higher than average albedo. The “Annual Maps” page shows the annual average and anomaly for the selected water year and variable.
+Interactive visualizations presented on the Shiny app are for the Sierra Nevada region in the Western United States. The app's landing page, “Daily Snow Cover and Albedo,” allows users to view snow properties for any day from October 1, 2000 through September 30, 2019 by selecting a date from the calendar widget. The top map shows snow cover percent, with brighter colors indicating more snow. The bottom map shows albedo for snow-covered areas with darker yellow indicating snow with lower albedo.
 
-
-### Troublshooting
-
-Submit issues to MEDS Snow Today Capstone repositories.
+On the “Monthly Maps” page, users can select a water year (wy2001 through wy2019) from a drop-down menu, then snow cover percent or albedo from radio buttons. Here, the top map shows the averages of the selected variable for each month, and the bottom map shows the monthly anomaly. For the snow cover anomaly map, red indicates less snow than typical for that month, and blue represents areas with more snow than typical. For the albedo anomaly map, brown indicates lower than average albedo, while purple indicates higher than average albedo. The “Annual Maps” page shows the annual average and anomaly for the selected water year and variable.
 
 
+## Troubleshooting
+
+If users experience issues in either the Shiny app or tutorials, they can submit an issue to the [MEDS Snow Today Capstone Github Repository](https://github.com/MEDSsnowtoday).
 
 
 

@@ -41,11 +41,10 @@ library(shiny)
 ```
 
 
-![](images/ConvictLake.jpg)
 
 ```{r convict, auto_pdf = TRUE, fig.height = 6}
 
-# knitr::include_graphics("images/ConvictLake.jpg")
+knitr::include_graphics("images/ConvictLake.jpg")
 
 ```
 

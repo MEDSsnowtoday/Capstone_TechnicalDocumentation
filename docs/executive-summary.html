@@ -54,6 +54,14 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.23/datatables.js"></script>
+<link href="libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 
 
 
@@ -101,21 +109,24 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
 <li class="chapter" data-level="" data-path="executive-summary.html"><a href="executive-summary.html"><i class="fa fa-check"></i>Executive Summary</a></li>
-<li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Background &amp; Significance</a>
+<li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Problem Statement</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="background.html"><a href="background.html#project-background"><i class="fa fa-check"></i><b>1.1</b> Project Background</a></li>
 <li class="chapter" data-level="1.2" data-path="background.html"><a href="background.html#project-significance"><i class="fa fa-check"></i><b>1.2</b> Project Significance</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>2</b> Project Objectives</a></li>
-<li class="chapter" data-level="3" data-path="solution.html"><a href="solution.html"><i class="fa fa-check"></i><b>3</b> Solution Design</a>
+<li class="chapter" data-level="2" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>2</b> Project Objectives</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="solution.html"><a href="solution.html#approach-and-methods"><i class="fa fa-check"></i><b>3.1</b> Approach and Methods</a></li>
+<li class="chapter" data-level="2.1" data-path="objectives.html"><a href="objectives.html#objectives-1"><i class="fa fa-check"></i><b>2.1</b> Objectives</a></li>
+<li class="chapter" data-level="2.2" data-path="objectives.html"><a href="objectives.html#website-recommendations"><i class="fa fa-check"></i><b>2.2</b> Website Recommendations</a></li>
+<li class="chapter" data-level="2.3" data-path="objectives.html"><a href="objectives.html#interactive-visualizations"><i class="fa fa-check"></i><b>2.3</b> Interactive Visualizations</a></li>
+<li class="chapter" data-level="2.4" data-path="objectives.html"><a href="objectives.html#tutorials"><i class="fa fa-check"></i><b>2.4</b> Tutorials</a></li>
 </ul></li>
+<li class="chapter" data-level="3" data-path="solution.html"><a href="solution.html"><i class="fa fa-check"></i><b>3</b> Solution Design</a></li>
 <li class="chapter" data-level="4" data-path="deliverables.html"><a href="deliverables.html"><i class="fa fa-check"></i><b>4</b> Products and Deliverables</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="deliverables.html"><a href="deliverables.html#website-recommendations"><i class="fa fa-check"></i><b>4.1</b> Website Recommendations</a></li>
-<li class="chapter" data-level="4.2" data-path="deliverables.html"><a href="deliverables.html#interactive-visualizations"><i class="fa fa-check"></i><b>4.2</b> Interactive Visualizations</a></li>
-<li class="chapter" data-level="4.3" data-path="deliverables.html"><a href="deliverables.html#tutorials"><i class="fa fa-check"></i><b>4.3</b> Tutorials</a></li>
+<li class="chapter" data-level="4.1" data-path="deliverables.html"><a href="deliverables.html#website-recommendations-1"><i class="fa fa-check"></i><b>4.1</b> Website Recommendations</a></li>
+<li class="chapter" data-level="4.2" data-path="deliverables.html"><a href="deliverables.html#interactive-visualizations-1"><i class="fa fa-check"></i><b>4.2</b> Interactive Visualizations</a></li>
+<li class="chapter" data-level="4.3" data-path="deliverables.html"><a href="deliverables.html#tutorials-1"><i class="fa fa-check"></i><b>4.3</b> Tutorials</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="testing.html"><a href="testing.html"><i class="fa fa-check"></i><b>5</b> Summary of Testing</a>
 <ul>
@@ -133,15 +144,18 @@ div.csl-indent {
 <li class="chapter" data-level="6.4.1" data-path="userdoc.html"><a href="userdoc.html#accessing-data-and-metadata"><i class="fa fa-check"></i><b>6.4.1</b> Accessing Data and Metadata</a></li>
 <li class="chapter" data-level="6.4.2" data-path="userdoc.html"><a href="userdoc.html#convert-data-files-and-visualize"><i class="fa fa-check"></i><b>6.4.2</b> Convert Data Files and Visualize</a></li>
 <li class="chapter" data-level="6.4.3" data-path="userdoc.html"><a href="userdoc.html#data-analysis"><i class="fa fa-check"></i><b>6.4.3</b> Data Analysis</a></li>
-<li class="chapter" data-level="6.4.4" data-path="userdoc.html"><a href="userdoc.html#r-shiny-application"><i class="fa fa-check"></i><b>6.4.4</b> R Shiny Application</a></li>
-<li class="chapter" data-level="6.4.5" data-path="userdoc.html"><a href="userdoc.html#troublshooting"><i class="fa fa-check"></i><b>6.4.5</b> Troublshooting</a></li>
 </ul></li>
+<li class="chapter" data-level="6.5" data-path="userdoc.html"><a href="userdoc.html#r-shiny-web-application"><i class="fa fa-check"></i><b>6.5</b> R Shiny Web Application</a></li>
+<li class="chapter" data-level="6.6" data-path="userdoc.html"><a href="userdoc.html#troubleshooting"><i class="fa fa-check"></i><b>6.6</b> Troubleshooting</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="archive.html"><a href="archive.html"><i class="fa fa-check"></i><b>7</b> Archive Access</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="archive.html"><a href="archive.html#data-to-retain"><i class="fa fa-check"></i><b>7.1</b> Data to Retain</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="8" data-path="appendixa.html"><a href="appendixa.html"><i class="fa fa-check"></i><b>8</b> Appendix A: Solution Design Workflow</a></li>
+<li class="chapter" data-level="9" data-path="appendixb.html"><a href="appendixb.html"><i class="fa fa-check"></i><b>9</b> Appendix B: Website Architecture</a></li>
+<li class="chapter" data-level="10" data-path="appendixc.html"><a href="appendixc.html"><i class="fa fa-check"></i><b>10</b> Appendix C: Wireframe</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/MEDSsnowtoday/Technical_Documentation" target="blank">Published with bookdown</a></li>
 
@@ -164,11 +178,18 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="executive-summary" class="section level1 unnumbered hasAnchor">
 <h1>Executive Summary<a href="executive-summary.html#executive-summary" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Snow is one of the most important natural water resources. Scientists have established that climate change is affecting the spatial and temporal variability of frozen water resources <span class="citation">(<a href="#ref-newton2021" role="doc-biblioref">Newton, Farjad, and Orwin 2021</a>)</span>.</p>
+<p>Snow is one of the most important natural water resources present in nature. It stores water in winter and releases it in spring during the melting season. Snow also influences the Earth’s ability to regulate its temperature <span class="citation">(<a href="#ref-newton2021" role="doc-biblioref">Newton, Farjad, and Orwin 2021</a>)</span>. Knowing the spatial extent of snow cover and understanding its properties is critical for water resource management and modeling global climatic conditions <span class="citation">(<a href="#ref-liston1999" role="doc-biblioref">Liston 1999</a>)</span>.</p>
+<p>Snow data collection includes snow cover extent and albedo percentages. Albedo measures how much solar radiation is reflected from a surface. Obtaining accurate information on snow coverage and albedo data is critical to modeling and analyzing water resource availability. Estimating snow cover variability and spatial extent is essential for proactive water management, and monitoring snow cover is important for planning and facilitating winter recreation activities. For these reasons, a centralized repository of snow data accessible to water managers and scientists is essential.</p>
+<p>The Snow Today website is a leading source of seasonal snow condition data products for environmental remote sensing and field observations. The site’s intended audience includes scientists, water resource managers, and recreationalists who access up-to-date information on the state of snowpack properties from the watershed basin to the regional level across the Western United States. Spatial products offered by Snow Today include snow-covered areas, snow cover days, albedo percentages, and snow water equivalent (SWE). Snow Today is currently expanding its spatial domain from the Western United States to all of North America, Greenland, and High Mountain Asia. The researchers at Snow Today are taking this opportunity to increase the usability and accessibility of their website to try and reach a wider audience of users. In support of these updates, affiliates of Snow Today, including researchers from the <a href="https://www.eri.ucsb.edu/">UC Santa Barbara Earth Research Institute (ERI)</a> and <a href="https://instaar.colorado.edu/">the University of Colorado Boulder Institute of Arctic &amp; Alpine Research (INSTAAR)</a> (the Client), have requested the Bren Masters of Environmental Data Science Snow Today Group (the Group) to recommend how to incorporate these changes. Integration of these changes will assist Snow Today with increasing the usability and accessibility of the website in hopes of reaching a broader audience of the scientific, water management, and recreational communities.</p>
+<p>The Snow Today Capstone Project (Project) delivers recommendations to update the current Snow Today website by creating an information architecture plan, wireframe mockups, a web application prototype with interactive visualizations, and end-user tutorials that run in Python. The information architecture plans and wireframe mockup suggestions will help make the existing website interface easier to navigate for site users. Updating the current static visualizations with interactive visuals will increase the website’s value by allowing users to customize and compare temporal ranges. End-user tutorials will help users access, process, and visualize the complex structure of Snow Today’s snow cover and albedo datasets. These elements will help the Client achieve their goals of increasing the usability and accessibility of an updated Snow Today website to reach a wider audience and enable a larger set of users to access and interpret seasonal snow condition data.</p>
+<p>Interactive visualizations serve as a template to replace the existing static models currently displayed on the Snow Today website. The interactive maps and charts are presented in an R Shiny application that allows users to select a specific date and view snow cover and albedo maps, then zoom in/out on the maps to view specific areas. The Shiny app also displays annual and monthly snow cover, albedo averages, and anomalies. Users can use this app to learn more about snow science, the importance of albedo, nuances of the snow and albedo metadata, and background information on the Capstone Project and Group members from supplemental tabs within the Shiny app. The “Tutorials” tab on the Shiny app directs users to notebooks on our Group Github repository.</p>
 
 </div>
-<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3>References</h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-liston1999" class="csl-entry">
+Liston, G. E. 1999. <span>“Interrelationships Among Snow Distribution, Snowmelt, and Snow Cover Depletion: Implications for Atmospheric, Hydrologic, and Ecologic Modeling.”</span> <em>Journal of Applied Meteorology and Climatology</em> 38 (10): 1474–87. <a href="https://doi.org/10.1175/1520-0450(1999)038&lt;1474:IASDSA&gt;2.0.CO;2">https://doi.org/10.1175/1520-0450(1999)038&lt;1474:IASDSA&gt;2.0.CO;2</a>.
+</div>
 <div id="ref-newton2021" class="csl-entry">
 Newton, B. W., B. Farjad, and J. F. Orwin. 2021. <span>“Spatial and Temporal Shifts in Historic and Future Temperature and Precipitation Patterns Related to Snow Accumulation and Melt Regimes in Alberta, Canada.”</span> <em>Water</em> 13 (8): 1013. <a href="https://doi.org/10.3390/w13081013">https://doi.org/10.3390/w13081013</a>.
 </div>

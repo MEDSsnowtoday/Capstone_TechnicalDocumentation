@@ -1,5 +1,11 @@
 # Solution Design {#solution}
 
-## Approach and Methods
+**Approach and Methods**
 
-The Snow Today Group approach focused on how the framework of the new Snow Today website can deliver meaningful content to diverse end-users. 
+The Snow Today Group approach focused on how to process and present the data in a way that would better deliver meaningful content to end-users with a range of technical expertise through website recommendations, interactive visualizations, and tutorials. To provide open access to the Project workflow, all code used to create the deliverables is documented on the MEDS Snow Today public GitHub organization. A flow diagram of the Project’s workflow is included in [Appendix A: Solution Design Workflow](#appendixa). 
+
+The workflow began with understanding how to access and view the raw HDF5 data files, then moved to processing the data to calculate statistics, such as minimum, maximum, and median values and monthly and yearly averages and anomalies [@stillinger2022]. The data processing steps were documented on the Project GitHub Organization. Once the data was processed, the Group created website recommendations, interactive visualizations, and educational tutorials based on what we had learned about the data. Iterative reviews were a continual part of our approach. For example, the data processing step was revised based on reviews of preliminary tutorials and visualizations. Revisions were also made based on feedback from the client. Finally, all deliverables were incorporated into an interactive web application that was created using R Shiny.
+
+To elaborate further on our methods, the Snow Today Group used Python to access and interpret the snow cover and albedo datasets. The processed data was then converted to GeoTIFF and NetCDF files with spatial reference coordinate system information attached in a format that could be recognized by standard mapping packages. These data processing steps were documented in Python-based tutorials to provide a reproducible workflow. The Project used raster stacks of these georeferenced files to create interactive maps in R for the Shiny application.
+
+Using MindMup mapping software, the current Snow Today website architecture was mocked up to map navigation processes a user would conduct in order to access data, newsletters, and learn more about Snow Today research [Appendix B](#appendixb). The Project then redesigned the website flow to optimize the user experience when accessing the site [Appendix B](#appendixb). Using this new architecture design, the Group created a website wireframe to present recommended format and content updates to the Snow Today website [Appendix C](#appendixc). The website wireframe was designed in the Miro whiteboard application. 

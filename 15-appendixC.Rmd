@@ -1,0 +1,40 @@
+# Appendix C: Wireframe {#appendixc}
+
+```{r, auto_pdf = TRUE, echo=FALSE, message = FALSE, warning = FALSE, fig.cap="WireFrame design for the recommeneded Snow Today website 'Landing' page update"}
+
+knitr::include_graphics("images/ST01_Landing.jpg")
+
+```
+
+```{r, auto_pdf = TRUE, echo=FALSE, message = FALSE, warning = FALSE, fig.cap="WireFrame design for the recommeneded Snow Today website 'About' page update"}
+
+knitr::include_graphics("images/ST02_About.jpg")
+
+```
+
+```{r, auto_pdf = TRUE, echo=FALSE, message = FALSE, warning = FALSE, fig.cap="WireFrame design for the recommeneded Snow Today website 'Insights' page update"}
+
+knitr::include_graphics("images/ST03_Insights.jpg")
+
+```
+
+```{r, auto_pdf = TRUE, echo=FALSE, message = FALSE, warning = FALSE, fig.cap="WireFrame design for the recommeneded Snow Today website 'Snow Science Research' page update"}
+
+knitr::include_graphics("images/ST04_Research.jpg")
+
+```
+
+```{r, auto_pdf = TRUE, echo=FALSE, message = FALSE, warning = FALSE, fig.cap="WireFrame design for the recommeneded Snow Today website 'Data' page update"}
+
+knitr::include_graphics("images/ST05_Data.jpg")
+
+```
+
+```{r, auto_pdf = TRUE, echo=FALSE, message = FALSE, warning = FALSE, fig.cap="WireFrame design for the recommeneded Snow Today website 'Tutorial' page update"}
+
+knitr::include_graphics("images/ST06_Tutorial.jpg")
+
+```
+
+
+

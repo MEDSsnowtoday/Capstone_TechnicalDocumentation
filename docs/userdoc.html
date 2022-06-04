@@ -54,6 +54,14 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.23/datatables.js"></script>
+<link href="libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 
 
 
@@ -101,21 +109,24 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
 <li class="chapter" data-level="" data-path="executive-summary.html"><a href="executive-summary.html"><i class="fa fa-check"></i>Executive Summary</a></li>
-<li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Background &amp; Significance</a>
+<li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Problem Statement</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="background.html"><a href="background.html#project-background"><i class="fa fa-check"></i><b>1.1</b> Project Background</a></li>
 <li class="chapter" data-level="1.2" data-path="background.html"><a href="background.html#project-significance"><i class="fa fa-check"></i><b>1.2</b> Project Significance</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>2</b> Project Objectives</a></li>
-<li class="chapter" data-level="3" data-path="solution.html"><a href="solution.html"><i class="fa fa-check"></i><b>3</b> Solution Design</a>
+<li class="chapter" data-level="2" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>2</b> Project Objectives</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="solution.html"><a href="solution.html#approach-and-methods"><i class="fa fa-check"></i><b>3.1</b> Approach and Methods</a></li>
+<li class="chapter" data-level="2.1" data-path="objectives.html"><a href="objectives.html#objectives-1"><i class="fa fa-check"></i><b>2.1</b> Objectives</a></li>
+<li class="chapter" data-level="2.2" data-path="objectives.html"><a href="objectives.html#website-recommendations"><i class="fa fa-check"></i><b>2.2</b> Website Recommendations</a></li>
+<li class="chapter" data-level="2.3" data-path="objectives.html"><a href="objectives.html#interactive-visualizations"><i class="fa fa-check"></i><b>2.3</b> Interactive Visualizations</a></li>
+<li class="chapter" data-level="2.4" data-path="objectives.html"><a href="objectives.html#tutorials"><i class="fa fa-check"></i><b>2.4</b> Tutorials</a></li>
 </ul></li>
+<li class="chapter" data-level="3" data-path="solution.html"><a href="solution.html"><i class="fa fa-check"></i><b>3</b> Solution Design</a></li>
 <li class="chapter" data-level="4" data-path="deliverables.html"><a href="deliverables.html"><i class="fa fa-check"></i><b>4</b> Products and Deliverables</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="deliverables.html"><a href="deliverables.html#website-recommendations"><i class="fa fa-check"></i><b>4.1</b> Website Recommendations</a></li>
-<li class="chapter" data-level="4.2" data-path="deliverables.html"><a href="deliverables.html#interactive-visualizations"><i class="fa fa-check"></i><b>4.2</b> Interactive Visualizations</a></li>
-<li class="chapter" data-level="4.3" data-path="deliverables.html"><a href="deliverables.html#tutorials"><i class="fa fa-check"></i><b>4.3</b> Tutorials</a></li>
+<li class="chapter" data-level="4.1" data-path="deliverables.html"><a href="deliverables.html#website-recommendations-1"><i class="fa fa-check"></i><b>4.1</b> Website Recommendations</a></li>
+<li class="chapter" data-level="4.2" data-path="deliverables.html"><a href="deliverables.html#interactive-visualizations-1"><i class="fa fa-check"></i><b>4.2</b> Interactive Visualizations</a></li>
+<li class="chapter" data-level="4.3" data-path="deliverables.html"><a href="deliverables.html#tutorials-1"><i class="fa fa-check"></i><b>4.3</b> Tutorials</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="testing.html"><a href="testing.html"><i class="fa fa-check"></i><b>5</b> Summary of Testing</a>
 <ul>
@@ -133,15 +144,18 @@ div.csl-indent {
 <li class="chapter" data-level="6.4.1" data-path="userdoc.html"><a href="userdoc.html#accessing-data-and-metadata"><i class="fa fa-check"></i><b>6.4.1</b> Accessing Data and Metadata</a></li>
 <li class="chapter" data-level="6.4.2" data-path="userdoc.html"><a href="userdoc.html#convert-data-files-and-visualize"><i class="fa fa-check"></i><b>6.4.2</b> Convert Data Files and Visualize</a></li>
 <li class="chapter" data-level="6.4.3" data-path="userdoc.html"><a href="userdoc.html#data-analysis"><i class="fa fa-check"></i><b>6.4.3</b> Data Analysis</a></li>
-<li class="chapter" data-level="6.4.4" data-path="userdoc.html"><a href="userdoc.html#r-shiny-application"><i class="fa fa-check"></i><b>6.4.4</b> R Shiny Application</a></li>
-<li class="chapter" data-level="6.4.5" data-path="userdoc.html"><a href="userdoc.html#troublshooting"><i class="fa fa-check"></i><b>6.4.5</b> Troublshooting</a></li>
 </ul></li>
+<li class="chapter" data-level="6.5" data-path="userdoc.html"><a href="userdoc.html#r-shiny-web-application"><i class="fa fa-check"></i><b>6.5</b> R Shiny Web Application</a></li>
+<li class="chapter" data-level="6.6" data-path="userdoc.html"><a href="userdoc.html#troubleshooting"><i class="fa fa-check"></i><b>6.6</b> Troubleshooting</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="archive.html"><a href="archive.html"><i class="fa fa-check"></i><b>7</b> Archive Access</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="archive.html"><a href="archive.html#data-to-retain"><i class="fa fa-check"></i><b>7.1</b> Data to Retain</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="8" data-path="appendixa.html"><a href="appendixa.html"><i class="fa fa-check"></i><b>8</b> Appendix A: Solution Design Workflow</a></li>
+<li class="chapter" data-level="9" data-path="appendixb.html"><a href="appendixb.html"><i class="fa fa-check"></i><b>9</b> Appendix B: Website Architecture</a></li>
+<li class="chapter" data-level="10" data-path="appendixc.html"><a href="appendixc.html"><i class="fa fa-check"></i><b>10</b> Appendix C: Wireframe</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/MEDSsnowtoday/Technical_Documentation" target="blank">Published with bookdown</a></li>
 
@@ -166,38 +180,61 @@ div.csl-indent {
 <h1><span class="header-section-number">Section 6</span> User Documentation<a href="userdoc.html#userdoc" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="overview" class="section level2 hasAnchor" number="6.1">
 <h2><span class="header-section-number">6.1</span> Overview<a href="userdoc.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This user documentation aims to guide end users on how to properly install and use the Project’s snow data tutorials and navigate the data visualization web application.</p>
 </div>
 <div id="required-software-and-packages" class="section level2 hasAnchor" number="6.2">
 <h2><span class="header-section-number">6.2</span> Required Software and Packages<a href="userdoc.html#required-software-and-packages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Project was completed with open-source software. Python is used to read data files, complete spatial and statistical analysis, and visualize results. All code is stored in the MEDS Snow Today public GitHub repository. Deliverables are visualized in a R Shiny application platform.
+Recommended software to install in order to run Project code: Anaconda-Navigator or Visual Studio Code (plus relevant extensions), and Conda, an open-source package management system (Anaconda 2017).</p>
+<p><strong>Python Packages</strong></p>
+<ul>
+<li>gdal</li>
+<li>h5py</li>
+<li>imageio</li>
+<li>leafmap</li>
+<li>matplotlib</li>
+<li>numpy</li>
+<li>pandas</li>
+<li>plotly</li>
+<li>rasterio</li>
+<li>rioxarray</li>
+<li>wget</li>
+<li>xarray</li>
+</ul>
 </div>
 <div id="data-and-repository-sources" class="section level2 hasAnchor" number="6.3">
 <h2><span class="header-section-number">6.3</span> Data and Repository Sources<a href="userdoc.html#data-and-repository-sources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The Project presents data on snow cover area and albedo. The Snow Today Group accessed data from ERI, which hosts a repository of historical snow condition data. These files were created using the SPIReS model and are outputted in an HDF5 format (.H5 files). The SPIReS HDF files contain 19 years of snow cover and albedo data. There is one file for each year, and this Project accessed the files from 2001 to 2019. All data used for the Project are publicly available, and there are no limitations to how others can use the data.</p>
+<p>Metadata is documented on the Project’s R Shiny application in an easy-to-find tab and a readme.txt file. This documentation explains the structure of the file types, timeframes, geographic extents, available variables, coordinate system, and units. The Client indicated that some Snow Today users prefer GeoTIFF files over the HDF5 file format. As such, the tutorials walk users through ways to convert the HDF5 files into GeoTIFFs and explain different aspects of the metadata, including projection information, cell size, projection type, and a variety of other variables. Doing so effectively increases the data’s accessibility and reduces the time users need to comprehend and utilize the snow cover and albedo datasets.
+Project deliverables and code are stored within the MEDS Snow Today GitHub organization and the UCSB Ylaipi GRIT server. The R Shiny web application is hosted on the UCSB Ylaipi GRIT server. Links to these resources are listed in the <a href="archive.html#archive">Archive Access</a> section of this document.</p>
 </div>
 <div id="exploring-the-data" class="section level2 hasAnchor" number="6.4">
 <h2><span class="header-section-number">6.4</span> Exploring the Data<a href="userdoc.html#exploring-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="accessing-data-and-metadata" class="section level3 hasAnchor" number="6.4.1">
 <h3><span class="header-section-number">6.4.1</span> Accessing Data and Metadata<a href="userdoc.html#accessing-data-and-metadata" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Snow cover and albedo datasets are stored…</p>
+<p>Snow cover and albedo datasets are stored on UCSB’s General Research IT (GRIT) server and can be accessed using a link within the tutorial notebooks.</p>
+<p>Snow cover and albedo datasets are stored in a hierarchical data format, HDF5, which is designed to store and organize large amounts of data. HDF5 simplifies the file structure to include only two major types of objects: datasets and groups. As such, snow cover and albedo datasets are structured into “Grid”(group) –&gt; “MODIS_GRID_500m”(group) –&gt; variable(s)(dataset). The tutorial page includes ways to access the metadata and view the file structure using Python processes. In addition, links to external software are provided to view the dataset structure quickly and easily.</p>
 </div>
 <div id="convert-data-files-and-visualize" class="section level3 hasAnchor" number="6.4.2">
 <h3><span class="header-section-number">6.4.2</span> Convert Data Files and Visualize<a href="userdoc.html#convert-data-files-and-visualize" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Geospatial software and Python packages have trouble interpreting Snow Today’s snow-related dataset’s metadata, making it difficult to visualize the data spatially. As such, tutorials have been provided to subset, clean, reproject, and convert the snow-related datasets into GeoTIFFs and NetCDF file formats. Doing so allows the users to reproject the data into a more easily interpretable format by geospatial software and packages. The tutorials also include a method to visualize geospatially referenced raster data on an interactive map. A separate tutorial is included to visualize and compare yearly snow cover extent and albedo percentages.</p>
 </div>
 <div id="data-analysis" class="section level3 hasAnchor" number="6.4.3">
 <h3><span class="header-section-number">6.4.3</span> Data Analysis<a href="userdoc.html#data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Users may be interested in using Snow Today’s snow and albedo datasets to help answer scientific queries. As such, tutorials have been supplied to help users process and subset the datasets. The tutorials include ways to clean the data, calculate the monthly and annual average snow cover extent and albedo percentages, and steps to calculate monthly anomalies.</p>
 </div>
-<div id="r-shiny-application" class="section level3 hasAnchor" number="6.4.4">
-<h3><span class="header-section-number">6.4.4</span> R Shiny Application<a href="userdoc.html#r-shiny-application" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A prototype web application was developed to showcase our contributions towards a more open source workflow for Snow Today data. The web application, which was developed with R Shiny, presents potential features for the new Snow Today website, interactive visualizations, and tutorials. The web application also presents documentation on snow science, links to Snow Today monthly newsletters, information on the data sources including metadata, MEDS capstone project background, and team bios. Together, this content will minimize a barrier to working with Snow Today data.
-Interactive visualizations presented on the Shiny app are for the Sierra region in the Western United States. The landing page, “Daily Snow Cover and Albedo,” of the app allows users to view snow properties for any day from October 1, 2000 through September 30, 2019 by selecting a date from the calendar widget. The top map shows snow cover percent with brighter colors indicating more snow. The bottom map shows albeo for snow covered areas with darker yellow indicating snow with lower albedo.
-The Project deliverables are hosted on an R Shiny application. This application hosts pages displaying snow data visualizations, snow science glossary, Snow Today monthly newsletters, links to access Snow Today SPIReS data, a project About page, and the Project’s tutorials.</p>
-<p>On the “Monthly Maps” page, users can select a water year (wy2001 through wy2019) from a drop down menu thensnow cover percent or albedo from radio buttons. Here, the top map shows averages of the selected variable for each month and the bottom map shows the monthly anomaly. For the snow cover anomaly map, red indicates less snow than typical for that month and blue represents areas with more snow than typical for that month. For the albedo anomaly map, brown indicates lower than average albedo while purple indicates higher than average albedo. The “Annual Maps” page shows the annual average and anomaly for the selected water year and variable.</p>
 </div>
-<div id="troublshooting" class="section level3 hasAnchor" number="6.4.5">
-<h3><span class="header-section-number">6.4.5</span> Troublshooting<a href="userdoc.html#troublshooting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Submit issues to MEDS Snow Today Capstone repositories.</p>
+<div id="r-shiny-web-application" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> R Shiny Web Application<a href="userdoc.html#r-shiny-web-application" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A prototype web application was developed to showcase our contributions to Snow Today data’s more open-source workflow. The web application, which was developed with R Shiny, presents potential features for the new Snow Today website, interactive visualizations, and tutorials. The web application also presents documentation on snow science, links to Snow Today monthly newsletters, and information on the data sources, including metadata, MEDS capstone Project background, and team bios. Together, this content will minimize a barrier to working with Snow Today data. The deployed Shiny app can be found at <a href="https://shiny.snow.ucsb.edu/snow_today_shiny_app/">https://shiny.snow.ucsb.edu/snow_today_shiny_app/</a>.
+The source data for the web application was the 19 years of snow cover and albedo data discussed above. These files were processed using Python in a Jupyter Notebook to calculate monthly and annual averages and anomalies for the period of record. These notebooks can be found on the MEDS Snow Today public GitHub repository. A challenge of this data was that the coordinate reference system metadata was not included in a standard format that mapping packages could easily recognize. Spatial information was specified when converting the processed data to GeoTIFF format to address this issue. Raster stacks of daily data for each water year and of the processed GeoTIFFs served as inputs to the Shiny App.</p>
+<p>Interactive visualizations presented on the Shiny app are for the Sierra Nevada region in the Western United States. The app’s landing page, “Daily Snow Cover and Albedo,” allows users to view snow properties for any day from October 1, 2000 through September 30, 2019 by selecting a date from the calendar widget. The top map shows snow cover percent, with brighter colors indicating more snow. The bottom map shows albedo for snow-covered areas with darker yellow indicating snow with lower albedo.</p>
+<p>On the “Monthly Maps” page, users can select a water year (wy2001 through wy2019) from a drop-down menu, then snow cover percent or albedo from radio buttons. Here, the top map shows the averages of the selected variable for each month, and the bottom map shows the monthly anomaly. For the snow cover anomaly map, red indicates less snow than typical for that month, and blue represents areas with more snow than typical. For the albedo anomaly map, brown indicates lower than average albedo, while purple indicates higher than average albedo. The “Annual Maps” page shows the annual average and anomaly for the selected water year and variable.</p>
+</div>
+<div id="troubleshooting" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Troubleshooting<a href="userdoc.html#troubleshooting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If users experience issues in either the Shiny app or tutorials, they can submit an issue to the <a href="https://github.com/MEDSsnowtoday">MEDS Snow Today Capstone Github Repository</a>.</p>
 
-</div>
 </div>
 </div>
             </section>

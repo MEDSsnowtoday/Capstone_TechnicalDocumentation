@@ -1,6 +1,24 @@
 # Archive Access {#archive}
 
+```{r, echo=FALSE, message = FALSE, warning = FALSE}
+library(kableExtra)
+library(DT)
+```
+
+
 This Project was an analysis of existing data, which is openly available at location cited in the reference section [@stillinger2022]. Further documentation about data processing are available on the [MEDS Snow Today GitHub organization](https://github.com/MEDSsnowtoday).
 
 ## Data to Retain
+
+```{r, echo=FALSE, message = FALSE, warning = FALSE}
+df <- data.frame(Data_Product = c("Final output data", "SPIReS data", "Technical Documentation", "Testing environment - R", "Testing environment - Python", "Tutorial notebooks", "Web application", "Website documentation"),
+                 Details = c("GeoTiff rasters with associated metadata for visualizations. Data is saved on the non-public UCSB Ylaipi GRIT server.", "Historic post-processed HDF5 snow data.", "An open-source, digital version of this document was published using GitHub pages and the `bookdown` package.", "Sandbox repository for testing code in R. This repository is set to private and will not be accessible to end users.", "Sandbox repository for testing code in Python. This repository is set to private and will not be accessible to end users.", "Three Python-based tutorials created to help users through downloading, accessing, processing, and visualizing the National Snow and Ice Data Center's (NSIDC) Snow Today snow cover and albedo datasets.", "R Shiny application developed to showcase Project's interactive visualization deliverables. Hosted on the UCSB Ylaipi GRIT server.", "Documentation on website recommendations: architecture, wireframe, visualization palettes."),
+                 Location = c("Github Organization repository", "UCSB ERI GRIT Server", "Github Organization repository", "Github Organization repository", "Github Organization repository","Github Organization Tutorials repository", "Github Organization Shiny app repository", "Github Organization Technical Documentation repository"),
+                 url = c('<a href = "https://github.com/MEDSsnowtoday/data_processing">https://github.com/MEDSsnowtoday/data_processing</a>', '<a href = "https://snow.ucsb.edu/index.php/remotely-sensed-products/">https://snow.ucsb.edu/index.php/remotely-sensed-products/</a>', '<a href = "https://github.com/MEDSsnowtoday/Technical_Documentation">https://github.com/MEDSsnowtoday/Technical_Documentation</a>', '<a href = "https://github.com/MEDSsnowtoday/r_sandbox">https://github.com/MEDSsnowtoday/r_sandbox</a>', '<a href = "https://github.com/MEDSsnowtoday/py_sandbox">https://github.com/MEDSsnowtoday/py_sandbox</a>', '<a href = "https://github.com/MEDSsnowtoday/Tutorials">https://github.com/MEDSsnowtoday/Tutorials</a>', '<a href = "https://github.com/MEDSsnowtoday/snow_today_shiny_app">https://github.com/MEDSsnowtoday/snow_today_shiny_app</a>', '<a href = "https://github.com/MEDSsnowtoday/Technical_Documentation">https://github.com/MEDSsnowtoday/Technical_Documentation</a>')
+                 )
+```
+
+```{r, echo=FALSE, message = FALSE, warning = FALSE}
+DT::datatable(df, escape = FALSE)
+```
 
